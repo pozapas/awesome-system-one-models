@@ -224,7 +224,7 @@ A("</div>\n\n---\n")
 toc = ["🧩 What is a System One model?", "🚀 Quick Start", "📊 At a glance", "🗺️ Taxonomy", "🌳 Genealogy", "🤖 Models",
        "📚 Datasets and benchmarks", "🛠️ Harnesses and tooling", "🔬 Evidence", "🧨 Failure atlas", "🧱 Design patterns",
        "✅ Reporting checklist in brief", "📖 Surveys and related resources", "🤝 Contributing", "📝 How to cite",
-       "🕒 Cutoff and versioning", "📜 License", "👥 Authors and maintainers"]
+       "🕒 Cutoff and versioning", "📜 License"]
 A("## 📌 Contents\n")
 half = (len(toc) + 1) // 2
 A("<table><tr><td valign=\"top\">\n\n" + "\n".join(f"{i+1}. [{h}](#{anchor(h)})" for i, h in enumerate(toc[:half])) +
@@ -576,15 +576,6 @@ A("[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativ
 A("The list, its data files and its figures are released under [CC BY 4.0](LICENSE). Linked papers, models, datasets "
   "and repositories keep their own licenses.\n")
 
-# ============================================================================= people
-A("## 👥 Authors and maintainers\n")
-prow2 = []
-for p in meta["people"]:
-    gh = f"<br><a href=\"https://github.com/{p['github']}\">@{p['github']}</a>" if p["github"] else ""
-    prow2.append(f"<td align=\"center\" width=\"50%\">\n\n**{p['name']}**<br>{p['role']}<br>{p['affiliation']}<br>"
-                 f"<a href=\"https://orcid.org/{p['orcid']}\"><img src=\"{badge('ORCID', p['orcid'], 'a6ce39')}\" alt=\"ORCID {p['orcid']}\"/></a>"
-                 f"<br><a href=\"mailto:{p['email']}\">{p['email']}</a>{gh}\n\n</td>")
-A('<div align="center">\n<table><tr>\n' + "\n".join(prow2) + "\n</tr></table>\n</div>\n")
 A('<div align="center">\n')
 A(f"![GitHub stars](https://img.shields.io/github/stars/{REPO}?style=social) "
   f"![GitHub forks](https://img.shields.io/github/forks/{REPO}?style=social) "

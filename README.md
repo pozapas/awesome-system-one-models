@@ -64,7 +64,6 @@ Maintained alongside &nbsp;<strong>From Calibrated Classifiers to Decision Contr
 15. [📝 How to cite](#-how-to-cite)
 16. [🕒 Cutoff and versioning](#-cutoff-and-versioning)
 17. [📜 License](#-license)
-18. [👥 Authors and maintainers](#-authors-and-maintainers)
 
 </td></tr></table>
 
@@ -1205,23 +1204,6 @@ This is **v1.0**. It reflects the survey's literature and ecosystem cutoff of **
 [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
 The list, its data files and its figures are released under [CC BY 4.0](LICENSE). Linked papers, models, datasets and repositories keep their own licenses.
-
-## 👥 Authors and maintainers
-
-<div align="center">
-<table><tr>
-<td align="center" width="50%">
-
-**Amir Rafe**<br>Maintainer<br>Texas State University<br><a href="https://orcid.org/0000-0002-4089-2088"><img src="https://img.shields.io/badge/ORCID-0000--0002--4089--2088-a6ce39.svg?style=flat-square" alt="ORCID 0000-0002-4089-2088"/></a><br><a href="mailto:amir.rafe@txstate.edu">amir.rafe@txstate.edu</a><br><a href="https://github.com/pozapas">@pozapas</a>
-
-</td>
-<td align="center" width="50%">
-
-**Subasish Das**<br>Co-author of the survey<br>Texas State University<br><a href="https://orcid.org/0000-0002-1671-2753"><img src="https://img.shields.io/badge/ORCID-0000--0002--1671--2753-a6ce39.svg?style=flat-square" alt="ORCID 0000-0002-1671-2753"/></a><br><a href="mailto:subasish@txstate.edu">subasish@txstate.edu</a>
-
-</td>
-</tr></table>
-</div>
 
 <div align="center">
 
