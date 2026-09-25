@@ -1,0 +1,9 @@
+id,author,license,purpose
+AirsideLabs/notam-typed-decisions,AirsideLabs,cc-by-4.0,"Frozen, hashed evaluation suites for typed decisions about NOTAMs (aviation notices), so any model can be scored on the same rows with the same per-class breakdown"
+LocalLLaMA/typed-decisions,LocalLLaMA (independent),Apache-2.0,Benchmark for typed probabilistic decisions over shared state; primitives follow TypeSafe's noul/choice/score
+Luni/laya-jev-benchmark,Luni (independent),Apache-2.0,"Independent third-party re-measurement of Laya against Jev's own published numbers, run on the author's own hardware, to check whether Laya's card comparisons (measured on different benchmarks) hold up on shared benchmarks"
+com-kotobalabs/typed-decisions-code-holes,com-kotobalabs,apache-2.0,"Single-token substitutions mined from git history of 64 public kotoba-lang repositories, each a choice question with a gold answer (the token the commit actually put there)"
+limberc/this-that-spatial-bench,limberc,mit,"The benchmark named on the this-that-model 1.0/1.1 cards; spatial and logical two-option decision families, each label-balanced by construction"
+n4ze3m/typed-decisions-synth,n4ze3m,mit,Synthetic dataset built for Hmm (a small open model answering questions about data with probabilities instead of text)
+pngwn/typed-decisions,pngwn,cc-by-sa-4.0,"Typed-decision corpus for training a masked-diffusion LM (the LLaDA recipe, nanodiff-350m-base) to emit calibrated discrete decisions instead of text"
+tasksource/tasksource-jev-typed-decisions,tasksource,other,"One million decisions from 500+ Tasksource tasks across 300+ dataset families, in a single typed-decision format"

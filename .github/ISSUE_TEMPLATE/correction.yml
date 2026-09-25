@@ -1,0 +1,29 @@
+name: 🩹 Report a correction
+description: Report a wrong value, a wrong grade, a wrong classification or a dead link.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Values are never edited in place. A confirmed correction adds a row that supersedes the old one, so please point to the source text.
+  - type: input
+    id: where
+    attributes:
+      label: Section and entry
+      placeholder: "Evidence, row 12"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the list says now
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should say, with the source
+      description: Quote the passage and give its section, table or figure.
+    validations:
+      required: true

@@ -1,0 +1,14 @@
+role,pattern,quantity,guarantee,guarantee_text,atlas_rows,evidence
+Threshold and route,Gate,"Top, positive or cumulative probability against a threshold",full,Proved under calibration (confidence and cascade propositions); conformal in principle,10,ibrahim2026evaluating;li2026jevasajudge
+Threshold and route,Screen-then-read,"Screen probability, then read-stage distributions",half,Recall identity proved (cascade proposition); factors empirical,5,rafe2026calibrated
+Threshold and route,Candidate-then-select,Choice distribution over a short candidate list,half,Conformal if the list is a conformal set; otherwise empirical,9,card:Mapika/decider-2b;wu2026reflex
+Threshold and route,Hierarchical fallback,Chained Choice distributions,half,Stage product proved (cascade proposition); accuracy empirical,9,doc:https://docs.typesafe.ai/patterns
+Escalate or defer,Confidence-gated cascade,Top probability against an escalation threshold,half,Cost identity proved (cascade proposition); quality empirical,2;6,li2026jevasajudge;wu2026reflex
+Escalate or defer,Judge-and-escalate,Probability of the preferred answer,half,Empirical,2;6,li2026jevasajudge;huang2026can
+Escalate or defer,Review budget,Calibrated probability in the review band,full,Proved under calibration (cascade proposition),14,rafe2026calibrated
+Combine answers,Speculative fan-out,Marginals of many isolated questions,none,None beyond each marginal (isolation proposition),,doc:https://docs.typesafe.ai/patterns;grey_robbalian_rev
+Combine answers,Composite scoring,Several marginals combined in code,none,None (isolation and ordinal propositions),7,doc:https://docs.typesafe.ai/patterns;robitza2026jevqa
+Combine answers,Marginal-to-joint reconciliation,Marginals of events about one state,full,Proved (isolation proposition),7,doc:https://docs.typesafe.ai/model-jaggedness/jev-1.13
+Combine answers,Paraphrase self-consistency,"Spread across wordings, orders and names",full,Proved for random names (option-name proposition); otherwise empirical,7;8,sun2026typesafe;ren2026openjev
+Harden the input and the contract,Deterministic pre-parsing,None for the parsed part,half,Exact for the parsed part; otherwise empirical,2;3;4;12,card:jaredpalmer/kev-9b;doc:https://docs.typesafe.ai/model-jaggedness/jev-1.13
+Harden the input and the contract,Versioned contract,"None; pins version, schema, names and temperature",none,None; procedural,8;14,card:bespokelabs/Bespoke-Nimble-9B;card:jaredpalmer/kev-0.8b

@@ -1,0 +1,53 @@
+row,model,code,label,url
+1,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+1,jev,L,Huang et al. (2026),https://arxiv.org/abs/2609.27607
+1,thisthat,V,flock-io/this-that-model-1.0 card,https://huggingface.co/flock-io/this-that-model-1.0
+1,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+2,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+2,thisthat,L,Cheng et al. (2026),https://arxiv.org/abs/2609.23886
+3,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+3,jev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
+3,kev,V,jaredpalmer/kev-9b card,https://huggingface.co/jaredpalmer/kev-9b
+3,kev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
+4,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+4,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+5,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+6,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+6,jev,L,Li et al. (2026),https://arxiv.org/abs/2609.26550
+7,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
+7,jev,L,Jev's Architecture Unmasked,https://archerhume.com/posts/jevs-architecture-unmasked/
+7,jev,L,Zhang et al. (2026),https://arxiv.org/abs/2609.27678
+7,thisthat,L,Cheng et al. (2026),https://arxiv.org/abs/2609.23886
+7,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+7,comparator,L,Zhang et al. (2026),https://arxiv.org/abs/2609.27678
+8,jev,L,Sun and Xu (2026),https://arxiv.org/abs/2609.26758
+8,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
+8,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+9,jev,L,Wu and Lim (2026),https://arxiv.org/abs/2609.26532
+9,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
+9,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
+9,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+10,nimble,V,bespokelabs/Bespoke-Nimble-9B card,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
+11,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
+11,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
+11,nimble,L,Bespoke-Nimble-9B model card and repository,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
+11,jev,L,Bespoke-Nimble-9B model card and repository,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
+11,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
+13,jev,L,Ibrahim and Zaki (2026),https://arxiv.org/abs/2609.24574
+13,jev,L,Li et al. (2026),https://arxiv.org/abs/2609.26550
+13,jev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
+13,kev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
+13,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
+13,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
+14,jev,L,Ibrahim and Zaki (2026),https://arxiv.org/abs/2609.24574
+14,jev,L,Jev's Architecture Unmasked,https://archerhume.com/posts/jevs-architecture-unmasked/
+14,jev,L,typed-decisions dataset card,https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+14,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
+14,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
+14,kev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
+14,nimble,L,Bespoke-Nimble-9B model card and repository,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
+14,thisthat,L,Cheng et al. (2026),https://arxiv.org/abs/2609.23886
+14,comparator,L,Ibrahim and Zaki (2026),https://arxiv.org/abs/2609.24574
+15,jev,L,typed-decisions dataset card,https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+15,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
+15,nimble,V,bespokelabs/Bespoke-Nimble-9B card,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B

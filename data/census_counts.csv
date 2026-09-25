@@ -1,0 +1,27 @@
+key,value
+hf.hitsScreened,513
+hf.totalRowsScreened,522
+hf.t1Count,104
+hf.t2Count,256
+hf.dCount,54
+hf.xCount,108
+hf.t2.formatConversion,142
+hf.t2.quantization,9
+hf.t2.finetuneDomain,6
+hf.t2.finetuneLanguage,10
+hf.t2.merge,4
+hf.t2.other,85
+hf.t1.distinctBackboneFamilies,15
+hf.t1.releaseDateSpan,2026-09-16 to 2026-09-24
+hf.t1.withDisclosedCalibrationFigure,95
+hf.t1.apacheOrMitLicense,93
+hf.t1Families,68
+gh.countApplication,47
+gh.countDirectoryOrSeo,15
+gh.countEvaluation,25
+gh.countIntegration,54
+gh.countLocalServer,48
+gh.countMirrorOrFork,1
+gh.countOpenModelTraining,36
+gh.countTotal,226
+gh.countCreatedSince20260915,226

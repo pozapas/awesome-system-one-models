@@ -1,0 +1,91 @@
+{
+  "repo": "pozapas/awesome-system-one-models",
+  "version": "1.0",
+  "cutoff": "2026-09-24",
+  "last_updated_badge": "September 2026",
+  "survey": {
+    "title": "From Calibrated Classifiers to Decision Contracts: A Survey of System One Models",
+    "authors": "Amir Rafe and Subasish Das",
+    "status": "manuscript under review",
+    "year": "2026"
+  },
+  "people": [
+    {
+      "name": "Amir Rafe",
+      "role": "Maintainer",
+      "affiliation": "Texas State University",
+      "orcid": "0000-0002-4089-2088",
+      "github": "pozapas",
+      "email": "amir.rafe@txstate.edu"
+    },
+    {
+      "name": "Subasish Das",
+      "role": "Co-author of the survey",
+      "affiliation": "Texas State University",
+      "orcid": "0000-0002-1671-2753",
+      "github": "",
+      "email": "subasish@txstate.edu"
+    }
+  ],
+  "streams": [
+    {
+      "code": "S1",
+      "emoji": "🏷️",
+      "name": "Label-conditioned scoring heads",
+      "gives": "the scoring head",
+      "summary": "Classification over a declared label set, from pretrained encoders to entailment-based zero-shot classification and label-in-context models. Once labels are read as text, their wording and order become part of the input."
+    },
+    {
+      "code": "S2",
+      "emoji": "⚖️",
+      "name": "Reward models, verifiers, judges and guardrail classifiers",
+      "gives": "the verdict role",
+      "summary": "Scorers that map a state and a set of candidates to a probability of preference, correctness or safety, together with the catalogue of biases that sway a model reading the candidates it must choose among."
+    },
+    {
+      "code": "S3",
+      "emoji": "🎯",
+      "name": "Proper scoring rules and calibrated training",
+      "gives": "the training target",
+      "summary": "Strictly proper scores, post-hoc calibration and calibration-aware rewards. Training against a proper score is training for calibration, which is the meaning of the decision model's promise."
+    },
+    {
+      "code": "S4",
+      "emoji": "🚦",
+      "name": "The reject option and its descendants",
+      "gives": "the policy that acts on the probability",
+      "summary": "The reject option, selective classification, learning to defer, conformal sets and model cascades. This stream turns a returned probability into an action such as act, review or escalate."
+    },
+    {
+      "code": "S5",
+      "emoji": "🧠",
+      "name": "Dual-process architectures and the System One name",
+      "gives": "the fast-solver role and the name",
+      "summary": "Dual-process accounts of reasoning and the fast and slow AI architectures that borrow them. The stream supplies the fast-solver role in a larger program and the System One label."
+    }
+  ],
+  "heads": {
+    "a": {"name": "Fixed slots", "color": "8e44ad"},
+    "b": {"name": "Option markers", "color": "2e86c1"},
+    "c": {"name": "Label logits", "color": "17a589"},
+    "d": {"name": "Pair scoring", "color": "d68910"},
+    "e": {"name": "Constrained decoding", "color": "7f8c8d"}
+  },
+  "regularities": [
+    {
+      "id": "R1",
+      "name": "The contract travels",
+      "short": "The contract travels, and robustness to option names belongs to the model family, so it must be tested per model."
+    },
+    {
+      "id": "R2",
+      "name": "Calibration is conditional",
+      "short": "Calibration belongs to the model and the task together, and it is audited per schema."
+    },
+    {
+      "id": "R3",
+      "name": "The policy earns the saving",
+      "short": "The unit that earns the saving is the escalation policy, not the decision model alone."
+    }
+  ]
+}

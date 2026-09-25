@@ -1,0 +1,16 @@
+row,failure_mode,group,jev,laya,kev,nimble,thisthat,decider,comparator
+1,Negation and scoping,Vendor jaggedness modes,V;L,,,,V,V,
+2,Counting and arithmetic,Vendor jaggedness modes,V,,,,L,,
+3,Dates,Vendor jaggedness modes,V;L,,V;L,,,,
+4,Indirection,Vendor jaggedness modes,V,,,,,V,
+5,Distractor state,Vendor jaggedness modes,V,,,,,,
+6,Adversarial state,Vendor jaggedness modes,V;L,,,,,,
+7,Cross-phrasing inconsistency,Vendor jaggedness modes,V;L,,,,L,V,L
+8,Option-name polarity,Further failure modes,L;B,V;B,B,B,B,V;B,
+9,Cardinality collapse,Further failure modes,L;B,V;L;B,B,B,B,V;B,B
+10,Ordinal numerics,Further failure modes,,,,V,,,
+11,Language transfer,Further failure modes,L,V;L,,L,,V,
+12,Physical magnitudes,Further failure modes,,,,,,,
+13,Top-confidence inversion,Further failure modes,L;B,V;L;B,L;B,B,B,B,B
+14,Shipped over-confidence,Further failure modes,L;B,V;L;B,L;B,L;B,L;B,B,L;B
+15,Teacher-consensus benchmark bias,Evaluation,L,L,,V,,,

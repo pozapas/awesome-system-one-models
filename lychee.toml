@@ -1,0 +1,17 @@
+# Link-check settings used by .github/workflows/link-check.yml
+max_concurrency = 8
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
+# Publishers reached through doi.org and some hosts refuse automated clients (403) or rate-limit (429).
+accept = ["200..=299", "301", "302", "303", "307", "308", "403", "429"]
+
+exclude = [
+  '^https://img\.shields\.io',
+  '^https://licensebuttons\.net',
+  '^https://x\.com',
+  '^https://www\.forbes\.com',
+  '^mailto:',
+]

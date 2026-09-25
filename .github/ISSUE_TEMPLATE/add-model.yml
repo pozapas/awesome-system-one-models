@@ -1,0 +1,53 @@
+name: 🤖 Add a model, dataset or tool
+description: Suggest an open decision model, a hosted model, a typed-decision dataset or a harness.
+title: "[Model] "
+labels: ["model"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open original implementations (own recipe or decision head, public card) are listed individually. Format conversions, quantizations, merges and re-uploads are counted as derivatives.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Open original implementation (T1)
+        - Hosted model
+        - Derivative (conversion, quantization, fine-tune or merge)
+        - Dataset
+        - Harness, server, SDK or evaluation package
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Hugging Face ID or repository URL
+      placeholder: "owner/name or https://github.com/owner/name"
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision or commit
+      description: The commit SHA or version string your description refers to.
+  - type: input
+    id: backbone
+    attributes:
+      label: Backbone and size
+  - type: textarea
+    id: head
+    attributes:
+      label: Decision head, as the card describes it
+      description: Quote the card. The maintainers map it to one of the five head families (fixed slots, option markers, label logits, pair scoring, constrained decoding).
+  - type: input
+    id: license
+    attributes:
+      label: License
+    validations:
+      required: true
+  - type: textarea
+    id: calibration
+    attributes:
+      label: Calibration as shipped
+      description: Serving temperature, any reported calibration error and the set it was measured on.

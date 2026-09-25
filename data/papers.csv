@@ -1,0 +1,214 @@
+key,group,year,title,first_author,venue,link,in_survey,survey_paper
+scholak2021picard,ADJ,2021,PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models,Scholak,Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2021.emnlp-main.779,no,no
+wei2022chain,ADJ,2022,Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models,Wei,Advances in Neural Information Processing Systems 35,https://doi.org/10.52202/068431-1800,no,no
+leviathan2023fast,ADJ,2022,Fast Inference from Transformers via Speculative Decoding,Leviathan,arXiv,https://arxiv.org/abs/2211.17192,no,no
+kojima2022large,ADJ,2022,Large Language Models Are Zero-Shot Reasoners,Kojima,Advances in Neural Information Processing Systems 35,https://doi.org/10.52202/068431-1613,no,no
+chen2023accelerating,ADJ,2023,Accelerating Large Language Model Decoding with Speculative Sampling,Chen,arXiv,https://arxiv.org/abs/2302.01318,no,no
+willard2023efficient,ADJ,2023,Efficient Guided Generation for Large Language Models,Willard,arXiv,https://arxiv.org/abs/2307.09702,yes,no
+kwon2023efficient,ADJ,2023,Efficient Memory Management for Large Language Model Serving with PagedAttention,Kwon,Proceedings of the 29th Symposium on Operating Systems Principles,https://doi.org/10.1145/3600006.3613165,no,no
+geng2023grammar,ADJ,2023,Grammar-Constrained Decoding for Structured NLP Tasks without Finetuning,Geng,Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2023.emnlp-main.674,no,no
+beurerkellner2023prompting,ADJ,2023,Prompting Is Programming: A Query Language for Large Language Models,Beurer-Kellner,Proceedings of the ACM on Programming Languages,https://doi.org/10.1145/3591300,no,no
+qin2023toolllm,ADJ,2023,ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs,Qin,arXiv,https://arxiv.org/abs/2307.16789,no,no
+schick2023toolformer,ADJ,2023,Toolformer: Language Models Can Teach Themselves to Use Tools,Schick,Advances in Neural Information Processing Systems 36,https://doi.org/10.52202/075280-2997,yes,no
+patil2023gorilla,ADJ,2024,Gorilla: Large Language Model Connected with Massive APIs,Patil,Advances in Neural Information Processing Systems 37,https://doi.org/10.52202/079017-4020,no,no
+beurerkellner2024domino,ADJ,2024,"Guiding LLMs The Right Way: Fast, Non-Invasive Constrained Generation",Beurer-Kellner,arXiv,https://arxiv.org/abs/2403.06988,no,no
+tam2024let,ADJ,2024,Let Me Speak Freely? A Study On The Impact Of Format Restrictions On Large Language Model Performance,Tam,Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track,https://doi.org/10.18653/v1/2024.emnlp-industry.91,yes,no
+zheng2024sglang,ADJ,2024,SGLang: Efficient Execution of Structured Language Model Programs,Zheng,Advances in Neural Information Processing Systems 37,https://doi.org/10.52202/079017-2000,no,no
+dong2025xgrammar,ADJ,2024,XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models,Dong,arXiv,https://arxiv.org/abs/2411.15100,yes,no
+danescu2012echoes,DATA,2012,Echoes of power: language effects and power differences in social interaction,Danescu-Niculescu-Mizil,Proceedings of the 21st international conference on World Wide Web,https://doi.org/10.1145/2187836.2187931,no,no
+danescu2013computational,DATA,2013,A Computational Approach to Politeness with Application to Social Factors,Danescu-Niculescu-Mizil,arXiv,https://arxiv.org/abs/1306.6078,no,no
+saravia2018carer,DATA,2018,CARER: Contextualized Affect Representations for Emotion Recognition,Saravia,Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/d18-1404,no,no
+zhang2018conversations,DATA,2018,Conversations Gone Awry: Detecting Early Signs of Conversational Failure,Zhang,Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/p18-1125,no,no
+larson2019evaluation,DATA,2019,An Evaluation Dataset for Intent Classification and Out-of-Scope Prediction,Larson,Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),https://doi.org/10.18653/v1/d19-1131,no,no
+hendrycks2021measuring,DATA,2020,Measuring Massive Multitask Language Understanding,Hendrycks,arXiv,https://arxiv.org/abs/2009.03300,no,no
+ziems2024can,DATA,2024,Can Large Language Models Transform Computational Social Science?,Ziems,Computational Linguistics,https://doi.org/10.1162/coli_a_00502,no,no
+whiting2011quadas2,RPT,2011,QUADAS-2: A Revised Tool for the Quality Assessment of Diagnostic Accuracy Studies,Whiting,Annals of Internal Medicine,https://doi.org/10.7326/0003-4819-155-8-201110180-00009,yes,no
+collins2015transparent,RPT,2015,Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis (TRIPOD): The TRIPOD Statement,Collins,European Urology,https://doi.org/10.1016/j.eururo.2014.11.025,yes,no
+bender2018data,RPT,2018,Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science,Bender,Transactions of the Association for Computational Linguistics,https://doi.org/10.1162/tacl_a_00041,no,no
+mitchell2019model,RPT,2019,Model Cards for Model Reporting,Mitchell,"Proceedings of the Conference on Fairness, Accountability, and Transparency",https://doi.org/10.1145/3287560.3287596,yes,no
+moons2019probast,RPT,2019,PROBAST: A Tool to Assess Risk of Bias and Applicability of Prediction Model Studies: Explanation and Elaboration,Moons,Annals of Internal Medicine,https://doi.org/10.7326/m18-1377,yes,no
+wolff2019probast,RPT,2019,PROBAST: A Tool to Assess the Risk of Bias and Applicability of Prediction Model Studies,Wolff,Annals of Internal Medicine,https://doi.org/10.7326/m18-1376,yes,no
+dodge2019show,RPT,2019,Show Your Work: Improved Reporting of Experimental Results,Dodge,Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),https://doi.org/10.18653/v1/d19-1224,no,no
+raji2020closing,RPT,2020,Closing the AI accountability gap: defining an end-to-end framework for internal algorithmic auditing,Raji,"Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency",https://doi.org/10.1145/3351095.3372873,yes,no
+rivera2020guidelines,RPT,2020,Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI Extension,Rivera,BMJ,https://doi.org/10.1136/bmj.m3210,yes,no
+pineau2021improving,RPT,2020,Improving Reproducibility in Machine Learning Research (A Report from the NeurIPS 2019 Reproducibility Program),Pineau,arXiv,https://arxiv.org/abs/2003.12206,yes,no
+liu2020reporting,RPT,2020,Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI Extension,Liu,BMJ,https://doi.org/10.1136/bmj.m3164,yes,no
+sounderajah2021quadasai,RPT,2021,A quality assessment tool for artificial intelligence-centered diagnostic test accuracy studies: QUADAS-AI,Sounderajah,Nature Medicine,https://doi.org/10.1038/s41591-021-01517-0,yes,no
+gebru2021datasheets,RPT,2021,Datasheets for datasets,Gebru,Communications of the ACM,https://doi.org/10.1145/3458723,yes,no
+sounderajah2021developing,RPT,2021,Developing a reporting guideline for artificial intelligence-centred diagnostic test accuracy studies: the STARD-AI protocol,Sounderajah,BMJ Open,https://doi.org/10.1136/bmjopen-2020-047709,yes,no
+page2021prisma,RPT,2021,The PRISMA 2020 statement: an updated guideline for reporting systematic reviews,Page,BMJ,https://doi.org/10.1136/bmj.n71,yes,no
+kapoor2023leakage,RPT,2023,Leakage and the reproducibility crisis in machine-learning-based science,Kapoor,Patterns,https://doi.org/10.1016/j.patter.2023.100804,yes,no
+collins2024tripodai,RPT,2024,TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods,Collins,BMJ,https://doi.org/10.1136/bmj-2023-078378,yes,no
+dietterich1995solving,S1,1995,Solving Multiclass Learning Problems via Error-Correcting Output Codes,Dietterich,Journal of Artificial Intelligence Research,https://doi.org/10.1613/jair.105,no,no
+freund1997decisiontheoretic,S1,1997,A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting,Freund,Journal of Computer and System Sciences,https://doi.org/10.1006/jcss.1997.1504,no,no
+domingos1997optimality,S1,1997,On the Optimality of the Simple Bayesian Classifier under Zero-One Loss,Domingos,Machine Learning,https://doi.org/10.1023/a:1007413511361,no,no
+ng2001discriminative,S1,2001,On Discriminative vs. Generative Classifiers: A Comparison of Logistic Regression and Naive Bayes,Ng,Advances in Neural Information Processing Systems 14,https://proceedings.neurips.cc/paper/2001/hash/7b7a53e239400a13bd6be6c91c4f6c4e-Abstract.html,yes,no
+caruana2004ensemble,S1,2004,Ensemble selection from libraries of models,Caruana,Twenty-first international conference on Machine learning - ICML '04,https://doi.org/10.1145/1015330.1015432,no,no
+devlin2019bert,S1,2019,BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,Devlin,"Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",https://doi.org/10.18653/v1/n19-1423,yes,no
+yin2019benchmarking,S1,2019,"Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach",Yin,Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),https://doi.org/10.18653/v1/d19-1404,yes,no
+sanh2019distilbert,S1,2019,"DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",Sanh,arXiv,https://arxiv.org/abs/1910.01108,no,no
+nogueira2019passage,S1,2019,Passage Re-ranking with BERT,Nogueira,arXiv,https://arxiv.org/abs/1901.04085,no,no
+liu2019roberta,S1,2019,RoBERTa: A Robustly Optimized BERT Pretraining Approach,Liu,arXiv,https://arxiv.org/abs/1907.11692,no,no
+reimers2019sentencebert,S1,2019,Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks,Reimers,Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),https://doi.org/10.18653/v1/d19-1410,yes,no
+puri2019zeroshot,S1,2019,Zero-shot Text Classification With Generative Language Models,Puri,arXiv,https://arxiv.org/abs/1912.10165,no,no
+lewis2020bart,S1,2020,"BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",Lewis,Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics,https://doi.org/10.18653/v1/2020.acl-main.703,yes,no
+khattab2020colbert,S1,2020,ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT,Khattab,Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval,https://doi.org/10.1145/3397271.3401075,no,no
+he2021deberta,S1,2020,DeBERTa: Decoding-enhanced BERT with Disentangled Attention,He,arXiv,https://arxiv.org/abs/2006.03654,no,no
+brown2020language,S1,2020,Language Models are Few-Shot Learners,Brown,arXiv,https://arxiv.org/abs/2005.14165,yes,no
+zhao2021calibrate,S1,2021,Calibrate Before Use: Improving Few-Shot Performance of Language Models,Zhao,arXiv,https://arxiv.org/abs/2102.09690,yes,no
+wang2021entailment,S1,2021,Entailment as Few-Shot Learner,Wang,arXiv,https://arxiv.org/abs/2104.14690,no,no
+schick2021exploiting,S1,2021,Exploiting Cloze-Questions for Few-Shot Text Classification and Natural Language Inference,Schick,Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume,https://doi.org/10.18653/v1/2021.eacl-main.20,yes,no
+gao2021making,S1,2021,Making Pre-trained Language Models Better Few-shot Learners,Gao,Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers),https://doi.org/10.18653/v1/2021.acl-long.295,no,no
+holtzman2021surface,S1,2021,Surface Form Competition: Why the Highest Probability Answer Isn’t Always Right,Holtzman,Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2021.emnlp-main.564,no,no
+lester2021power,S1,2021,The Power of Scale for Parameter-Efficient Prompt Tuning,Lester,Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2021.emnlp-main.243,no,no
+perez2021true,S1,2021,True Few-Shot Learning with Language Models,Perez,arXiv,https://arxiv.org/abs/2105.11447,no,no
+tunstall2022setfit,S1,2022,Efficient Few-Shot Learning Without Prompts,Tunstall,arXiv,https://arxiv.org/abs/2209.11055,no,no
+robinson2023leveraging,S1,2022,Leveraging Large Language Models for Multiple Choice Question Answering,Robinson,arXiv,https://arxiv.org/abs/2210.12353,yes,no
+min2022noisy,S1,2022,Noisy Channel Language Model Prompting for Few-Shot Text Classification,Min,Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2022.acl-long.365,no,no
+karimimahabadi2022prompt,S1,2022,Prompt-free and Efficient Few-shot Learning with Language Models,Karimi Mahabadi,Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2022.acl-long.254,no,no
+zheng2024large,S1,2023,Large Language Models Are Not Robust Multiple Choice Selectors,Zheng,arXiv,https://arxiv.org/abs/2309.03882,yes,no
+sclar2024quantifying,S1,2023,Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting,Sclar,arXiv,https://arxiv.org/abs/2310.11324,no,no
+zaratiana2023gliner,S1,2024,GLiNER: Generalist Model for Named Entity Recognition using Bidirectional Transformer,Zaratiana,Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers),https://doi.org/10.18653/v1/2024.naacl-long.300,yes,no
+pezeshkpour2023large,S1,2024,Large Language Models Sensitivity to The Order of Options in Multiple-Choice Questions,Pezeshkpour,Findings of the Association for Computational Linguistics: NAACL 2024,https://doi.org/10.18653/v1/2024.findings-naacl.130,no,no
+stepanov2025gliclass,S1,2025,GLiClass: Generalist Lightweight Model for Sequence Classification Tasks,Stepanov,arXiv,https://arxiv.org/abs/2508.07662,yes,no
+warner2024moderbert,S1,2025,"Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference",Warner,Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2025.acl-long.127,yes,no
+llmclassifiers2025era,S1,2025,Text Classification in the LLM Era – Where do we stand?,Vajjala,arXiv,https://arxiv.org/abs/2502.11830,no,yes
+marone2025mmbert,S1,2025,mmBERT: A Modern Multilingual Encoder with Annealed Language Learning,Marone,arXiv,https://arxiv.org/abs/2509.06888,no,no
+chaedavidson2026llmclassifiers,S1,2026,Large Language Models for Text Classification: From Zero-Shot Learning to Instruction-Tuning,Chae,Sociological Methods & Research,https://doi.org/10.1177/00491241251325243,no,no
+christiano2017deep,S2,2017,Deep reinforcement learning from human preferences,Christiano,arXiv,https://arxiv.org/abs/1706.03741,yes,no
+stiennon2020learning,S2,2020,Learning to summarize from human feedback,Stiennon,arXiv,https://arxiv.org/abs/2009.01325,yes,no
+cobbe2021training,S2,2021,Training Verifiers to Solve Math Word Problems,Cobbe,arXiv,https://arxiv.org/abs/2110.14168,yes,no
+lees2022new,S2,2022,A New Generation of Perspective API: Efficient Multilingual Character-level Transformers,Lees,Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining,https://doi.org/10.1145/3534678.3539147,no,no
+uesato2022solving,S2,2022,Solving math word problems with process- and outcome-based feedback,Uesato,arXiv,https://arxiv.org/abs/2211.14275,no,no
+ouyang2022training,S2,2022,Training Language Models to Follow Instructions with Human Feedback,Ouyang,Advances in Neural Information Processing Systems 35,https://doi.org/10.52202/068431-2011,yes,no
+bai2022training,S2,2022,Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback,Bai,arXiv,https://arxiv.org/abs/2204.05862,no,no
+markov2023holistic,S2,2023,A Holistic Approach to Undesired Content Detection in the Real World,Markov,Proceedings of the AAAI Conference on Artificial Intelligence,https://doi.org/10.1609/aaai.v37i12.26752,yes,no
+chiang2023can,S2,2023,Can Large Language Models Be an Alternative to Human Evaluations?,Chiang,Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2023.acl-long.870,no,no
+rafailov2023direct,S2,2023,Direct Preference Optimization: Your Language Model is Secretly a Reward Model,Rafailov,Advances in Neural Information Processing Systems 36,https://doi.org/10.52202/075280-2338,no,no
+liu2023geval,S2,2023,G-Eval: NLG Evaluation using Gpt-4 with Better Human Alignment,Liu,Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2023.emnlp-main.153,yes,no
+zheng2023judging,S2,2023,Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena,Zheng,Advances in Neural Information Processing Systems 36,https://doi.org/10.52202/075280-2020,yes,no
+lightman2023lets,S2,2023,Let's Verify Step by Step,Lightman,arXiv,https://arxiv.org/abs/2305.20050,yes,no
+inan2023llama,S2,2023,Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations,Inan,arXiv,https://arxiv.org/abs/2312.06674,yes,no
+wang2023pandalm,S2,2023,PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization,Wang,arXiv,https://arxiv.org/abs/2306.05087,no,no
+kim2023prometheus,S2,2023,Prometheus: Inducing Fine-grained Evaluation Capability in Language Models,Kim,arXiv,https://arxiv.org/abs/2310.08491,no,no
+gu2024survey,S2,2024,A Survey on LLM-as-a-Judge,Gu,arXiv,https://arxiv.org/abs/2411.15594,no,yes
+ye2024justice,S2,2024,Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge,Ye,arXiv,https://arxiv.org/abs/2410.02736,yes,no
+panickssery2024llm,S2,2024,LLM Evaluators Recognize and Favor Their Own Generations,Panickssery,Advances in Neural Information Processing Systems 37,https://doi.org/10.52202/079017-2197,yes,no
+zeng2023large,S2,2024,Large Language Models are not Fair Evaluators,Wang,Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2024.acl-long.511,no,no
+dubois2024lengthcontrolled,S2,2024,Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators,Dubois,arXiv,https://arxiv.org/abs/2404.04475,yes,no
+wang2023mathshepherd,S2,2024,Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations,Wang,Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers),https://doi.org/10.18653/v1/2024.acl-long.510,no,no
+kim2024prometheus2,S2,2024,Prometheus 2: An Open Source Language Model Specialized in Evaluating Other Language Models,Kim,Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2024.emnlp-main.248,no,no
+zeng2024shieldgemma,S2,2024,ShieldGemma: Generative AI Content Moderation Based on Gemma,Zeng,arXiv,https://arxiv.org/abs/2407.21772,yes,no
+malik2025rewardbench2,S2,2025,RewardBench 2: Advancing Reward Model Evaluation,Malik,arXiv,https://arxiv.org/abs/2506.01937,no,no
+lambert2024rewardbench,S2,2025,RewardBench: Evaluating Reward Models for Language Modeling,Lambert,Findings of the Association for Computational Linguistics: NAACL 2025,https://doi.org/10.18653/v1/2025.findings-naacl.96,yes,no
+brier1950verification,S3,1950,Verification of Forecasts Expressed in Terms of Probability,Brier,Monthly Weather Review,https://doi.org/10.1175/1520-0493%281950%29078%3C0001:vofeit%3E2.0.co%3B2,yes,no
+epstein1969scoring,S3,1969,A Scoring System for Probability Forecasts of Ranked Categories,Epstein,Journal of Applied Meteorology,https://doi.org/10.1175/1520-0450%281969%29008%3C0985:assfpf%3E2.0.co%3B2,yes,no
+murphy1973new,S3,1973,A New Vector Partition of the Probability Score,Murphy,Journal of Applied Meteorology,https://doi.org/10.1175/1520-0450%281973%29012%3C0595:anvpot%3E2.0.co%3B2,yes,no
+dawid1982wellcalibrated,S3,1982,The Well-Calibrated Bayesian: Rejoinder,Dawid,Journal of the American Statistical Association,https://doi.org/10.2307/2287723,no,no
+degroot1983comparison,S3,1983,The Comparison and Evaluation of Forecasters,DeGroot,The Statistician,https://doi.org/10.2307/2987588,no,no
+winkler1996scoring,S3,1996,Scoring rules and the evaluation of probabilities,Winkler,Test,https://doi.org/10.1007/bf02562681,no,no
+foster1998asymptotic,S3,1998,Asymptotic calibration,Foster,Biometrika,https://doi.org/10.1093/biomet/85.2.379,no,no
+zadrozny2002transforming,S3,2002,Transforming classifier scores into accurate multiclass probability estimates,Zadrozny,Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining,https://doi.org/10.1145/775047.775151,yes,no
+niculescumizil2005predicting,S3,2005,Predicting good probabilities with supervised learning,Niculescu-Mizil,Proceedings of the 22nd international conference on Machine learning - ICML '05,https://doi.org/10.1145/1102351.1102430,no,no
+nelsen2006introduction,S3,2006,An Introduction to Copulas,,Springer New York,https://doi.org/10.1007/0-387-28678-0,yes,no
+gneiting2007probabilistic,S3,2007,"Probabilistic Forecasts, Calibration and Sharpness",Gneiting,Journal of the Royal Statistical Society Series B: Statistical Methodology,https://doi.org/10.1111/j.1467-9868.2007.00587.x,no,no
+gneiting2007strictly,S3,2007,"Strictly Proper Scoring Rules, Prediction, and Estimation",Gneiting,Journal of the American Statistical Association,https://doi.org/10.1198/016214506000001437,yes,no
+brocker2009reliability,S3,2009,"Reliability, sufficiency, and the decomposition of proper scores",Bröcker,Quarterly Journal of the Royal Meteorological Society,https://doi.org/10.1002/qj.456,no,no
+hastie2009elements,S3,2009,"The Elements of Statistical Learning: Data Mining, Inference, and Prediction",Hastie,Springer,https://doi.org/10.1007/978-0-387-84858-7,no,no
+jiang2012calibrating,S3,2012,Calibrating predictive model estimates to support personalized medicine,Jiang,Journal of the American Medical Informatics Association,https://doi.org/10.1136/amiajnl-2011-000291,no,no
+gal2016dropout,S3,2015,Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning,Gal,arXiv,https://arxiv.org/abs/1506.02142,no,no
+naeini2015obtaining,S3,2015,Obtaining Well Calibrated Probabilities Using Bayesian Binning,Pakdaman Naeini,Proceedings of the AAAI Conference on Artificial Intelligence,https://doi.org/10.1609/aaai.v29i1.9602,no,no
+lakshminarayanan2017simple,S3,2016,Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles,Lakshminarayanan,arXiv,https://arxiv.org/abs/1612.01474,no,no
+kull2017beta,S3,2017,Beyond sigmoids: How to obtain well-calibrated probabilities from binary classifiers with beta calibration,Kull,Electronic Journal of Statistics,https://doi.org/10.1214/17-ejs1338si,no,no
+guo2017calibration,S3,2017,On Calibration of Modern Neural Networks,Guo,arXiv,https://arxiv.org/abs/1706.04599,yes,no
+kuleshov2018accurate,S3,2018,Accurate Uncertainties for Deep Learning Using Calibrated Regression,Kuleshov,arXiv,https://arxiv.org/abs/1807.00263,no,no
+kull2019beyond,S3,2019,Beyond temperature scaling: Obtaining well-calibrated multiclass probabilities with Dirichlet calibration,Kull,arXiv,https://arxiv.org/abs/1910.12656,yes,no
+widmann2019calibration,S3,2019,Calibration tests in multi-class classification: A unifying framework,Widmann,arXiv,https://arxiv.org/abs/1910.11385,no,no
+ovadia2019can,S3,2019,Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift,Ovadia,arXiv,https://arxiv.org/abs/1906.02530,no,no
+vaicenavicius2019evaluating,S3,2019,Evaluating model calibration in classification,Vaicenavicius,arXiv,https://arxiv.org/abs/1902.06977,no,no
+nixon2019measuring,S3,2019,Measuring Calibration in Deep Learning,Nixon,arXiv,https://arxiv.org/abs/1904.01685,no,no
+kumar2019verified,S3,2019,Verified Uncertainty Calibration,Kumar,arXiv,https://arxiv.org/abs/1909.10155,yes,no
+desai2020calibration,S3,2020,Calibration of Pre-trained Transformers,Desai,Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP),https://doi.org/10.18653/v1/2020.emnlp-main.21,no,no
+roelofs2022mitigating,S3,2020,Mitigating Bias in Calibration Error Estimation,Roelofs,arXiv,https://arxiv.org/abs/2012.08668,no,no
+rahaman2021uncertainty,S3,2020,Uncertainty Quantification and Deep Ensembles,Rahaman,arXiv,https://arxiv.org/abs/2007.08792,no,no
+gupta2021distributionfree,S3,2021,Distribution-free calibration guarantees for histogram binning without sample splitting,Gupta,arXiv,https://arxiv.org/abs/2105.04656,no,no
+jiang2021can,S3,2021,How Can We Know When Language Models Know? On the Calibration of Language Models for Question Answering,Jiang,Transactions of the Association for Computational Linguistics,https://doi.org/10.1162/tacl_a_00407,no,no
+minderer2021revisiting,S3,2021,Revisiting the Calibration of Modern Neural Networks,Minderer,arXiv,https://arxiv.org/abs/2106.07998,yes,no
+kompa2021second,S3,2021,Second opinion needed: communicating uncertainty in medical machine learning,Kompa,npj Digital Medicine,https://doi.org/10.1038/s41746-020-00367-3,no,no
+kadavath2022language,S3,2022,Language Models (Mostly) Know What They Know,Kadavath,arXiv,https://arxiv.org/abs/2207.05221,yes,no
+lin2022teaching,S3,2022,Teaching Models to Express Their Uncertainty in Words,Lin,arXiv,https://arxiv.org/abs/2205.14334,no,no
+blasiok2023unifying,S3,2023,A Unifying Theory of Distance from Calibration,Błasiok,Proceedings of the 55th Annual ACM Symposium on Theory of Computing,https://doi.org/10.1145/3564246.3585182,no,no
+xiong2024can,S3,2023,Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs,Xiong,arXiv,https://arxiv.org/abs/2306.13063,yes,no
+silvafilho2023classifier,S3,2023,Classifier calibration: a survey on how to assess and improve predicted class probabilities,Silva Filho,Machine Learning,https://doi.org/10.1007/s10994-023-06336-7,no,yes
+tian2023just,S3,2023,Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback,Tian,Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing,https://doi.org/10.18653/v1/2023.emnlp-main.330,no,no
+geng2024survey,S3,2024,A Survey of Confidence Estimation and Calibration in Large Language Models,Geng,Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers),https://doi.org/10.18653/v1/2024.naacl-long.366,yes,yes
+kalai2024calibrated,S3,2024,Calibrated Language Models Must Hallucinate,Kalai,Proceedings of the 56th Annual ACM Symposium on Theory of Computing,https://doi.org/10.1145/3618260.3649777,yes,no
+stengeleskin2024calibrated,S3,2024,LACIE: Listener-Aware Finetuning for Calibration in Large Language Models,Stengel-Eskin,Advances in Neural Information Processing Systems 37,https://doi.org/10.52202/079017-1364,no,no
+band2024linguistic,S3,2024,Linguistic Calibration of Long-Form Generations,Band,arXiv,https://arxiv.org/abs/2404.00474,yes,no
+damani2025beyond,S3,2025,Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty,Damani,arXiv,https://arxiv.org/abs/2507.16806,no,no
+mukkunnoth2025rlcd,S3,2025,Confidence-Aware Routing for Large Language Model Reliability Enhancement: A Multi-Signal Approach to Pre-Generation Hallucination Mitigation,M,arXiv,https://arxiv.org/abs/2510.01237,yes,no
+mukkunnoth2025towards,S3,2025,SalesRLAgent: A Reinforcement Learning Approach for Real-Time Sales Conversion Prediction and Optimization,M,arXiv,https://arxiv.org/abs/2503.23303,yes,no
+liu2025kdd,S3,2025,Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey,Liu,Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2,https://doi.org/10.1145/3711896.3736569,yes,yes
+kalai2025why,S3,2025,Why Language Models Hallucinate,Kalai,arXiv,https://arxiv.org/abs/2509.04664,yes,no
+shorinwa2025survey,S3,2026,"A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions",Shorinwa,ACM Computing Surveys,https://doi.org/10.1145/3744238,yes,yes
+yaldiz2026balancing,S3,2026,Balancing Classification and Calibration Performance in Decision-Making LLMs via Calibration Aware Reinforcement Learning,Yaldiz,Findings of the Association for Computational Linguistics: ACL 2026,https://doi.org/10.18653/v1/2026.findings-acl.610,no,no
+horvitz1952generalization,S4,1952,A Generalization of Sampling Without Replacement from a Finite Universe,Horvitz,Journal of the American Statistical Association,https://doi.org/10.1080/01621459.1952.10483446,yes,no
+chow1957optimum,S4,1957,An optimum character recognition system using decision functions,Chow,IRE Transactions on Electronic Computers,https://doi.org/10.1109/tec.1957.5222035,yes,no
+chow1970optimum,S4,1970,On optimum recognition error and reject tradeoff,Chow,IEEE Transactions on Information Theory,https://doi.org/10.1109/tit.1970.1054406,yes,no
+cohn1996active,S4,1995,Active Learning with Statistical Models,Cohn,Defense Technical Information Center,https://doi.org/10.21236/ada295617,no,no
+viola2001rapid,S4,2001,Rapid Object Detection Using a Boosted Cascade of Simple Features,Viola,Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition,https://doi.org/10.1109/CVPR.2001.990517,yes,no
+vovk2005algorithmic,S4,2005,Algorithmic Learning in a Random World,Vovk,Springer,https://doi.org/10.1007/b106715,no,no
+herbei2006classification,S4,2006,Classification with reject option,Herbei,Canadian Journal of Statistics,https://doi.org/10.1002/cjs.5550340410,no,no
+shafer2008tutorial,S4,2007,A tutorial on conformal prediction,Shafer,arXiv,https://arxiv.org/abs/0706.3188,no,yes
+elyaniv2010foundations,S4,2010,On the Foundations of Noise-free Selective Classification,El-Yaniv,Journal of Machine Learning Research,https://jmlr.org/papers/v11/el-yaniv10a.html,yes,no
+houlsby2011bayesian,S4,2011,Bayesian Active Learning for Classification and Preference Learning,Houlsby,arXiv,https://arxiv.org/abs/1112.5745,no,no
+vovk2013conditional,S4,2013,Conditional validity of inductive conformal predictors,Vovk,Machine Learning,https://doi.org/10.1007/s10994-013-5355-6,no,no
+hendrycks2017baseline,S4,2016,A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks,Hendrycks,arXiv,https://arxiv.org/abs/1610.02136,no,no
+cortes2016learning,S4,2016,Learning with Rejection,Cortes,Lecture Notes in Computer Science,https://doi.org/10.1007/978-3-319-46379-7_5,yes,no
+nan2017adaptive,S4,2017,Adaptive Classification for Prediction Under a Budget,Nan,arXiv,https://arxiv.org/abs/1705.10194,no,no
+madras2018predict,S4,2017,Predict Responsibly: Improving Fairness and Accuracy by Learning to Defer,Madras,arXiv,https://arxiv.org/abs/1711.06664,yes,no
+geifman2017selective,S4,2017,Selective Classification for Deep Neural Networks,Geifman,arXiv,https://arxiv.org/abs/1705.08500,yes,no
+wilder2020end,S4,2019,End to end learning and optimization on graphs,Wilder,arXiv,https://arxiv.org/abs/1905.13732,no,no
+geifman2019selectivenet,S4,2019,SelectiveNet: A Deep Neural Network with an Integrated Reject Option,Geifman,arXiv,https://arxiv.org/abs/1901.09192,no,no
+romano2020classification,S4,2020,Classification with Valid and Adaptive Coverage,Romano,arXiv,https://arxiv.org/abs/2006.02544,yes,no
+mozannar2020consistent,S4,2020,Consistent Estimators for Learning to Defer to an Expert,Mozannar,arXiv,https://arxiv.org/abs/2006.01862,yes,no
+kamath2020selective,S4,2020,Selective Question Answering under Domain Shift,Kamath,Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics,https://doi.org/10.18653/v1/2020.acl-main.503,yes,no
+kossen2021active,S4,2021,Active Testing: Sample-Efficient Model Evaluation,Kossen,arXiv,https://arxiv.org/abs/2103.05331,yes,no
+bates2021distributionfree,S4,2021,"Distribution-free, Risk-controlling Prediction Sets",Bates,Journal of the ACM,https://doi.org/10.1145/3478535,yes,no
+angelopoulos2023conformal,S4,2022,Conformal Risk Control,Angelopoulos,arXiv,https://arxiv.org/abs/2208.02814,yes,no
+varshney2022investigating,S4,2022,"Investigating Selective Prediction Approaches Across Several Tasks in IID, OOD, and Adversarial Settings",Varshney,Findings of the Association for Computational Linguistics: ACL 2022,https://doi.org/10.18653/v1/2022.findings-acl.158,no,no
+dohan2022language,S4,2022,Language Model Cascades,Dohan,arXiv,https://arxiv.org/abs/2207.10342,yes,no
+narasimhan2022posthoc,S4,2022,Post-Hoc Estimators for Learning to Defer to an Expert,Narasimhan,Advances in Neural Information Processing Systems 35,https://doi.org/10.52202/068431-2124,no,no
+quach2024conformal,S4,2023,Conformal Language Modeling,Quach,arXiv,https://arxiv.org/abs/2306.10193,no,no
+kumar2023conformal,S4,2023,Conformal Prediction with Large Language Models for Multi-Choice Question Answering,Kumar,arXiv,https://arxiv.org/abs/2305.18404,yes,no
+angelopoulos2022gentle,S4,2023,Conformal Prediction: A Gentle Introduction,Angelopoulos,Foundations and Trends in Machine Learning,https://doi.org/10.1561/2200000101,yes,yes
+chen2023frugalgpt,S4,2023,FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance,Chen,arXiv,https://arxiv.org/abs/2305.05176,yes,no
+yue2024large,S4,2023,Large Language Model Cascades with Mixture of Thoughts Representations for Cost-efficient Reasoning,Yue,arXiv,https://arxiv.org/abs/2310.03094,no,no
+jitkrittum2023when,S4,2023,When Does Confidence-Based Cascade Deferral Suffice?,Jitkrittum,Advances in Neural Information Processing Systems 36,https://doi.org/10.52202/075280-0431,yes,no
+mozannar2023who,S4,2023,Who Should Predict? Exact Algorithms For Learning to Defer to Humans,Mozannar,arXiv,https://arxiv.org/abs/2301.06197,no,no
+madaan2023automix,S4,2024,AutoMix: Automatically Mixing Language Models,Aggarwal,Advances in Neural Information Processing Systems 37,https://doi.org/10.52202/079017-4164,no,no
+hendrickx2024machine,S4,2024,Machine learning with a reject option: a survey,Hendrickx,Machine Learning,https://doi.org/10.1007/s10994-024-06534-x,yes,yes
+ong2024routellm,S4,2024,RouteLLM: Learning to Route LLMs with Preference Data,Ong,arXiv,https://arxiv.org/abs/2406.18665,yes,no
+strong2025learning,S4,2025,Learning to Defer: A Survey,Strong,,https://doi.org/10.5281/zenodo.17843044,yes,yes
+varangotreille2026routing,S4,2026,Doing More with Less: A Survey on Routing Strategies for Resource Optimisation in Large Language Model-Based Systems,Varangot-Reille,Journal of Artificial Intelligence Research,https://doi.org/10.1613/jair.1.19801,yes,yes
+moslem2026cascading,S4,2026,Dynamic Model Routing and Cascading for Efficient LLM Inference: A Survey,Moslem,arXiv,https://arxiv.org/abs/2603.04445,yes,yes
+sloman1996empirical,S5,1996,The empirical case for two systems of reasoning,Sloman,Psychological Bulletin,https://doi.org/10.1037/0033-2909.119.1.3,no,no
+stanovich2000individual,S5,2002,Individual Differences in Reasoning: Implications for the Rationality Debate?,Stanovich,Heuristics and Biases,https://doi.org/10.1017/cbo9780511808098.026,yes,no
+kahneman2002representativeness,S5,2002,Representativeness Revisited: Attribute Substitution in Intuitive Judgment,Kahneman,Heuristics and Biases,https://doi.org/10.1017/cbo9780511808098.004,no,no
+evans2008dual,S5,2008,"Dual-Processing Accounts of Reasoning, Judgment, and Social Cognition",Evans,Annual Review of Psychology,https://doi.org/10.1146/annurev.psych.59.103006.093629,yes,yes
+frankish2010dual,S5,2010,Dual‐Process and Dual‐System Theories of Reasoning,Frankish,Philosophy Compass,https://doi.org/10.1111/j.1747-9991.2010.00330.x,no,yes
+evans2013dual,S5,2013,Dual-Process Theories of Higher Cognition: Advancing the Debate,Evans,Perspectives on Psychological Science,https://doi.org/10.1177/1745691612460685,no,no
+booch2021thinking,S5,2020,Thinking Fast and Slow in AI,Booch,arXiv,https://arxiv.org/abs/2010.06002,yes,no
+ganapini2022thinking,S5,2021,Thinking Fast and Slow in AI: the Role of Metacognition,Ganapini,arXiv,https://arxiv.org/abs/2110.01834,yes,no
+hagendorff2023humanlike,S5,2023,Human-like intuitive behavior and reasoning biases emerged in large language models but disappeared in ChatGPT,Hagendorff,Nature Computational Science,https://doi.org/10.1038/s43588-023-00527-x,yes,no
+lin2023swiftsage,S5,2023,SwiftSage: A Generative Agent with Fast and Slow Thinking for Complex Interactive Tasks,Lin,Advances in Neural Information Processing Systems 36,https://doi.org/10.52202/075280-1034,yes,no
+naturerevpsych2025dualprocess,S5,2025,Dual-process theory and decision-making in large language models,Brady,Nature Reviews Psychology,https://doi.org/10.1038/s44159-025-00506-1,no,yes
+npjai2025synthesis,S5,2025,"Fast, slow, and metacognitive thinking in AI",Bergamaschi Ganapini,npj Artificial Intelligence,https://doi.org/10.1038/s44387-025-00027-5,yes,no
+cacm2025fastslow,S5,2025,Thinking Fast and Slow in Human and Machine Intelligence,Fabiano,Communications of the ACM,https://doi.org/10.1145/3715709,yes,no
+spearman1904proof,STATS,1904,The Proof and Measurement of Association between Two Things,Spearman,The American Journal of Psychology,https://doi.org/10.2307/1412159,no,no
+clopper1934use,STATS,1934,The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial,Clopper,Biometrika,https://doi.org/10.1093/biomet/26.4.404,no,no
+kendall1938new,STATS,1938,A New Measure of Rank Correlation,Kendall,Biometrika,https://doi.org/10.2307/2332226,no,no
+mcnemar1947note,STATS,1947,Note on the Sampling Error of the Difference Between Correlated Proportions or Percentages,McNemar,Psychometrika,https://doi.org/10.1007/bf02295996,no,no
+efron1979bootstrap,STATS,1979,Bootstrap Methods: Another Look at the Jackknife,Efron,The Annals of Statistics,https://doi.org/10.1214/aos/1176344552,no,no
+dietterich1998approximate,STATS,1998,Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms,Dietterich,Neural Computation,https://doi.org/10.1162/089976698300017197,no,no
+liang2023holistic,STATS,2022,Holistic Evaluation of Language Models,Liang,arXiv,https://arxiv.org/abs/2211.09110,no,no

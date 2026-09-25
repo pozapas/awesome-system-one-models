@@ -1,0 +1,55 @@
+id,created,license
+DavidHatley/system-one-mini-data,2026-09-16,apache-2.0
+LocalLLaMA/typed-decisions,2026-09-16,apache-2.0
+pngwn/typed-decisions,2026-09-16,cc-by-sa-4.0
+pngwn/typed-decisions-v2,2026-09-16,cc-by-sa-4.0
+reachjalil/jev-luna-pagerduty-trigger,2026-09-17,mit
+reachjalil/jevlogs-log-triage-benchmark,2026-09-17,other
+FaroukMoc2/jev-stage2-image-beans-pilot,2026-09-18,mit
+Mikhail/mini-jev-runs,2026-09-18,mit
+reachjalil/jev-tree-choice-cap,2026-09-18,mit
+AndeyTait/JevForge-Mind2Web,2026-09-19,cc-by-4.0
+com-kotobalabs/typed-decisions-code-holes,2026-09-19,apache-2.0
+com-kotobalabs/typed-decisions-repo-governance,2026-09-19,apache-2.0
+ctaxnagomi/DGUI_HYPERMEM-JEV,2026-09-19,mit
+ctaxnagomi/INSTRUCT_JEV,2026-09-19,mit
+dwidlee/systemone-lite-general,2026-09-19,mit
+limberc/this-that-spatial-bench,2026-09-19,mit
+Luni/laya-jev-benchmark,2026-09-19,apache-2.0
+roskosmos19/SystemOne,2026-09-19,not stated
+shreyanbr/system-one-training-pairs,2026-09-19,apache-2.0
+dwidlee/systemone-lite-phase2,2026-09-20,apache-2.0
+emretheus/jev-rag-benchmark,2026-09-20,mit
+n4ze3m/typed-decisions-synth,2026-09-20,mit
+Praveenrajus/jev-bench,2026-09-20,other
+SamuelChien821/typed-decision-bench,2026-09-20,other
+vagmi/jevlite_dataset,2026-09-20,cc-by-sa-4.0
+ZefanCai/Open-Jev,2026-09-20,cc0-1.0
+clduab11/jev-calibration-statistics,2026-09-21,mit
+dylantom2012/open-system-one-bench,2026-09-21,mit
+egetheengineer/jevcraft,2026-09-21,cc-by-sa-4.0
+JonusNattapong/jev-my-bro-dataset,2026-09-21,other
+kaivoss/system-one-270m-data,2026-09-21,apache-2.0
+SargeDev/jev-distill-corpus,2026-09-21,apache-2.0
+SargeDev/jev-distill-corpus-v3,2026-09-21,apache-2.0
+annelo/laya-marker-corpus,2026-09-22,other
+mghafiri/decision-model-scenarios,2026-09-22,mit
+pranaysuyash/laya-formatting-fragility,2026-09-22,apache-2.0
+tasksource/tasksource-jev-typed-decisions,2026-09-22,other
+telepatia-ai/typed-decisions-pt-es,2026-09-22,apache-2.0
+TuringCorp/poe-decider-recorded-cases,2026-09-22,cc-by-4.0
+ZefanCai/Open-Jev-v1.1,2026-09-22,other
+AirsideLabs/notam-typed-decisions,2026-09-23,cc-by-4.0
+dnagpt/laya-bio,2026-09-23,other
+gdelatournelle/laya-onnx-bench,2026-09-23,apache-2.0
+samatv256/jev-decisions-v1,2026-09-23,cc-by-4.0
+soyrsoyr/jev-playground-rlcd-v0,2026-09-23,mit
+tasksource/procedural-typed-decisions,2026-09-23,apache-2.0
+yehor-oleksiuk/bonzi-vs-jev-wanli256,2026-09-23,not stated
+caiovicentino1/eikos-decisions,2026-09-24,cc-by-4.0
+chaoliangUNSW/MacJev-0.8B-Decision-Data,2026-09-24,not stated
+HIT-TMG/JevEmbed-Data,2026-09-24,"['apache-2.0', 'cc0-1.0', 'cc-by-4.0']"
+JanerasGate/jev-distill-corpus-v3,2026-09-24,apache-2.0
+JonesLin/next-jev-choice-cot-200k,2026-09-24,not stated
+KikiNLP/CanITrustYou-Jev,2026-09-24,cc-by-nc-4.0
+kishida/jev-bench,2026-09-24,cc-by-sa-4.0

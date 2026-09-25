@@ -1,0 +1,48 @@
+name: 📄 Add a paper or study
+description: Suggest a paper for the genealogy or related resources, or a study that measures a decision model.
+title: "[Paper] "
+labels: ["paper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the suggestion. A **study** enters the evidence table when it reports a measured quantity for a typed probabilistic decision model on a stated task against a stated reference. Other papers enter the genealogy or the related resources when their metadata resolves in a registry.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: DOI, arXiv ID or stable URL
+      placeholder: "https://doi.org/... or https://arxiv.org/abs/..."
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Where does it belong?
+      options:
+        - Evidence (measures a decision model)
+        - "S1: Label-conditioned scoring heads"
+        - "S2: Reward models, verifiers, judges and guardrail classifiers"
+        - "S3: Proper scoring rules and calibrated training"
+        - "S4: The reject option and its descendants"
+        - "S5: Dual-process architectures and the System One name"
+        - Adjacent line, reporting standard or statistics
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: For a study, what is measured?
+      description: Models and versions, task, reference-label type (human adjudicated, crowd, teacher model, synthetic and so on), sample size and the main metric, with the section or table where it appears.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The link opens and points to the version I describe.
+          required: true

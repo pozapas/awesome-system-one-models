@@ -1,0 +1,27 @@
+key,title,publisher,url,page_date,accessed,kind
+ts_introduction,Introduction,TypeSafe AI,https://docs.typesafe.ai/introduction,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_system_one,System One,TypeSafe AI,https://docs.typesafe.ai/concepts/system-one,2026-09-17 (sitemap lastmod),2026-09-24,vendor documentation
+ts_models,Models,TypeSafe AI,https://docs.typesafe.ai/models,2026-09-22 (sitemap lastmod),2026-09-24,vendor documentation
+ts_choice,Choice,TypeSafe AI,https://docs.typesafe.ai/primitives/choice,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_score,Score,TypeSafe AI,https://docs.typesafe.ai/primitives/score,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_noul,Noul,TypeSafe AI,https://docs.typesafe.ai/primitives/noul,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_confidence,Confidence,TypeSafe AI,https://docs.typesafe.ai/confidence,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_api,API reference,TypeSafe AI,https://docs.typesafe.ai/api,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_jaggedness,Jev 1.13 jaggedness,TypeSafe AI,https://docs.typesafe.ai/model-jaggedness/jev-1.13,last reviewed 2026-09-17,2026-09-24,vendor documentation
+ts_launch_blog,Introducing System One Models & Jev,TypeSafe AI,https://typesafe.ai/blog/introducing-system-one-models-and-jev,2026-09-15,2026-09-24,vendor or partner post
+ts_homepage,TypeSafe AI homepage,TypeSafe AI,https://typesafe.ai/,undated,2026-09-24,vendor or partner post
+ts_ml_primer,AI primer,TypeSafe AI,https://docs.typesafe.ai/introduction/machine-learning-primer,2026-09-05 (sitemap lastmod),2026-09-24,vendor documentation
+ts_state,State,TypeSafe AI,https://docs.typesafe.ai/concepts/state,2026-09-20 (sitemap lastmod),2026-09-24,vendor documentation
+ts_patterns_cookbooks,Patterns,TypeSafe AI,https://docs.typesafe.ai/patterns,2026-08-31 / 2026-09-22 (sitemap lastmod),2026-09-24,vendor documentation
+ts_patterns_cookbooks,Cookbooks,TypeSafe AI,https://docs.typesafe.ai/cookbooks,2026-08-31 / 2026-09-22 (sitemap lastmod),2026-09-24,vendor documentation
+ts_evals,Workflow evals,TypeSafe AI,https://evals.typesafe.ai/,undated,2026-09-24,vendor documentation
+ts_primitives_advanced,Advanced: structure,TypeSafe AI,https://docs.typesafe.ai/primitives/advanced,2026-09-15 (sitemap lastmod),2026-09-24,vendor documentation
+latentspace_interview,Jev: System One models for Prod not God -- with Diogo Almeida CEO TypeSafe AI,Latent Space,https://www.latent.space/p/jev,~2026-09-21,2026-09-24,commentary
+willison_decision_models,Jev introduces a new shape of LLM--System One aka Decision Models,Simon Willison,https://simonwillison.net/2026/Sep/21/jev/,2026-09-21,2026-09-24,commentary
+langchain_harness,Building a Harness with Jev,LangChain,https://www.langchain.com/blog/building-a-harness-with-jev,2026-09-18,2026-09-24,vendor or partner post
+eesel_ultrafast,Is Jev really ultrafast?,eesel AI,https://www.eesel.ai/blog/jev-ultrafast,2026-09-21,2026-09-24,commentary
+archerhume_architecture,Jev's Architecture Unmasked,Archer Hume,https://archerhume.com/posts/jevs-architecture-unmasked/,2026-09-17,2026-09-24,commentary
+vercel_p95_report,Jev is the fastest-adopted model in AI Gateway history,Vercel,https://vercel.com/blog/ai-gateway-jev-model-launch,~2026-09-17,2026-09-24,commentary
+hn_launch_thread,Introducing System One Models and Jev (HN thread),albelfio et al.,https://news.ycombinator.com/item?id=49717558,2026-09-15,2026-09-24,discussion
+openrouter_decisions_endpoint,Jev on OpenRouter (guide),OpenRouter,https://openrouter.ai/docs/guides/community/jev,undated,2026-09-24,vendor documentation
+openrouter_decisions_endpoint,Jev 1.13 on OpenRouter (model page),OpenRouter,https://openrouter.ai/typesafe/jev-1.13,undated,2026-09-24,vendor documentation

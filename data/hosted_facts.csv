@@ -1,0 +1,13 @@
+fact,value,source
+Pinned model ID,jev-1.13.0,https://docs.typesafe.ai/models
+jev-latest resolves to,jev-1.13.0,https://docs.typesafe.ai/models
+Choice options (max),255,https://docs.typesafe.ai/primitives/choice
+Score levels (min),2,https://docs.typesafe.ai/primitives/score
+Score levels (max),10,https://docs.typesafe.ai/primitives/score
+State budget,32k tokens (state plus the longest question),https://docs.typesafe.ai/models
+Request budget,64k tokens (state plus all questions),https://docs.typesafe.ai/models
+"Input price, USD per million tokens",0.042,https://docs.typesafe.ai/models
+Output price,free (not metered),https://docs.typesafe.ai/models
+Stated latency,70 to 500 ms end to end (vendor claim),https://typesafe.ai/blog/introducing-system-one-models-and-jev
+Confidence on Noul,not returned (Choice and Score only),https://docs.typesafe.ai/confidence
+Jaggedness page last reviewed,2026-09-17,https://docs.typesafe.ai/model-jaggedness/jev-1.13

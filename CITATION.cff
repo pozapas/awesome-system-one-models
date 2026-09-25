@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this list, please cite it as below, and cite the survey it accompanies."
+type: dataset
+title: "Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models"
+abstract: "A curated and evidence-graded list of System One models (typed probabilistic decision models), organized by the survey's genealogy, anatomy, census, evidence ledger, failure atlas, design patterns and reporting checklist. The list reflects the survey cutoff of 24 September 2026."
+authors:
+  - family-names: Rafe
+    given-names: Amir
+    orcid: "https://orcid.org/0000-0002-4089-2088"
+    affiliation: "Texas State University"
+  - family-names: Das
+    given-names: Subasish
+    orcid: "https://orcid.org/0000-0002-1671-2753"
+    affiliation: "Texas State University"
+version: "1.0"
+date-released: 2026-09-24
+license: CC-BY-4.0
+repository-code: "https://github.com/pozapas/awesome-system-one-models"
+url: "https://github.com/pozapas/awesome-system-one-models"
+keywords:
+  - system-one-models
+  - decision-models
+  - calibration
+  - llm
+  - classification
+  - awesome-list
+  - survey
+preferred-citation:
+  type: unpublished
+  title: "From Calibrated Classifiers to Decision Contracts: A Survey of System One Models"
+  authors:
+    - family-names: Rafe
+      given-names: Amir
+      orcid: "https://orcid.org/0000-0002-4089-2088"
+    - family-names: Das
+      given-names: Subasish
+      orcid: "https://orcid.org/0000-0002-1671-2753"
+  year: 2026
+  notes: "Manuscript under review"

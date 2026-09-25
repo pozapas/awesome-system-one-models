@@ -1,0 +1,17 @@
+group,item,report
+What to pin,Model and revision,"The provider or checkpoint, the resolved revision, and the date that revision was confirmed."
+What to pin,Serving temperature,The exact decoding temperature and any other sampling parameter active at evaluation time.
+What to pin,Schema and identifiers,"The literal question text, the option identifiers sent to the model, and the rubric bound to each identifier, kept as separate fields."
+What to pin,Probability grid,"The smallest positive value the model can return, and the share of returned probabilities equal to zero."
+What to pin,State encoding,"How the state was serialized into the model input, the token budget, and any truncation rule."
+What to sample,Reference-label provenance,"Whether the reference label is human adjudicated, a single human rating, a crowd rating, a teacher model, a model consensus, or a synthetic procedure."
+What to sample,Sample size and exposure,"The item count, the grouping against near-duplicate leakage, and whether the set predates the cutoff."
+Calibration quantity per primitive,Choice calibration,"Classwise calibration or a reliability diagram by class, reported beside any top-label accuracy value."
+Calibration quantity per primitive,Score calibration,"The ranked probability score, or the calibration of the cumulative probabilities at each ordinal threshold."
+Calibration quantity per primitive,Joint-question calibration,"The Fréchet and Hoeffding interval or a stated dependence model, rather than the product of the marginals."
+Calibration quantity per primitive,Confidence statistic,"The exact confidence formula, the answer-set size it was computed on, and whether it was compared across sizes."
+Cascade and review results,Cascade recall,"The screening stage forwarding rate and the downstream detection rate, reported as two separate values."
+Cascade and review results,Review band and cost,"The routing threshold or band, the assumed costs of a false positive, a false negative and a review, and the resulting review volume."
+Cascade and review results,Speed and cost claims,"Latency and cost with the hardware, the batch size and concurrency, and whether the value is a vendor claim or an independent measurement."
+Handling version churn,Revision-change protocol,"A stated rule for a mid-study change to a served checkpoint or a default parameter, including which rows are re-run."
+Handling version churn,Superseded values,"Both the earlier and the later value when a revision change causes disagreement, each with its own revision, date and resolution."
