@@ -4,7 +4,7 @@
 ### *Typed probabilistic decision models: a curated, evidence-graded map of the contract, the models and the failures*
 
 <p align="center">
-  <img src="fig/contract.png" width="820" alt="The decision contract: a state and a typed question pass through a decision head in one forward pass to a calibrated distribution, which a policy threshold turns into act, review or escalate"/>
+  <img src="fig/contract.png" width="820" alt="The decision contract: a state and a typed question pass through a decision head in one forward pass to a distribution over the options, which a policy threshold turns into act, review or escalate"/>
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -47,11 +47,11 @@ Maintained alongside &nbsp;<strong>From Calibrated Classifiers to Decision Contr
 1. [🧩 What is a System One model?](#-what-is-a-system-one-model)
 2. [🚀 Quick Start](#-quick-start)
 3. [📊 At a glance](#-at-a-glance)
-4. [🗺️ Taxonomy](#-taxonomy)
+4. [🗺️ Taxonomy](#️-taxonomy)
 5. [🌳 Genealogy](#-genealogy)
 6. [🤖 Models](#-models)
 7. [📚 Datasets and benchmarks](#-datasets-and-benchmarks)
-8. [🛠️ Harnesses and tooling](#-harnesses-and-tooling)
+8. [🛠️ Harnesses and tooling](#️-harnesses-and-tooling)
 9. [🔬 Evidence](#-evidence)
 
 </td><td valign="top">
@@ -150,8 +150,8 @@ The decision contract is best read as a convergence of five older research lines
 
 | Stream | Contributes | Papers |
 | --- | --- | --- |
-| 🏷️ [Label-conditioned scoring heads](#-s1-label-conditioned-scoring-heads) | the scoring head | 36 |
-| ⚖️ [Reward models, verifiers, judges and guardrail classifiers](#-s2-reward-models-verifiers-judges-and-guardrail-classifiers) | the verdict role | 26 |
+| 🏷️ [Label-conditioned scoring heads](#️-s1-label-conditioned-scoring-heads) | the scoring head | 36 |
+| ⚖️ [Reward models, verifiers, judges and guardrail classifiers](#️-s2-reward-models-verifiers-judges-and-guardrail-classifiers) | the verdict role | 26 |
 | 🎯 [Proper scoring rules and calibrated training](#-s3-proper-scoring-rules-and-calibrated-training) | the training target | 51 |
 | 🚦 [The reject option and its descendants](#-s4-the-reject-option-and-its-descendants) | the policy that acts on the probability | 40 |
 | 🧠 [Dual-process architectures and the System One name](#-s5-dual-process-architectures-and-the-system-one-name) | the fast-solver role and the name | 13 |

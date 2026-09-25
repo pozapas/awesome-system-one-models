@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this list, please cite it as below, and cite the survey it accompanies."
-type: dataset
+type: software
 title: "Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models"
 abstract: "A curated and evidence-graded list of System One models (typed probabilistic decision models), organized by the survey's genealogy, anatomy, census, evidence ledger, failure atlas, design patterns and reporting checklist. The list reflects the survey cutoff of 24 September 2026."
 authors:

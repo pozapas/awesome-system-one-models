@@ -47,7 +47,7 @@ def img(label, message, color, alt=None):
 
 def anchor(heading):
     s = heading.strip().lower()
-    s = re.sub(r"[^\w\- ]", "", s, flags=re.UNICODE)
+    s = re.sub(r"[^\w\- \ufe0f]", "", s, flags=re.UNICODE)  # GitHub keeps the emoji variation selector
     return s.replace(" ", "-")
 
 
@@ -195,7 +195,7 @@ A = out.append
 A('<div align="center">\n')
 A("# 🧭 Awesome System One Models")
 A("### *Typed probabilistic decision models: a curated, evidence-graded map of the contract, the models and the failures*\n")
-A('<p align="center">\n  <img src="fig/contract.png" width="820" alt="The decision contract: a state and a typed question pass through a decision head in one forward pass to a calibrated distribution, which a policy threshold turns into act, review or escalate"/>\n</p>\n')
+A('<p align="center">\n  <img src="fig/contract.png" width="820" alt="The decision contract: a state and a typed question pass through a decision head in one forward pass to a distribution over the options, which a policy threshold turns into act, review or escalate"/>\n</p>\n')
 badges = [
     ("[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)"),
     ("[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)"),

@@ -15,7 +15,7 @@
   ],
   "title": "Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models",
   "version": "1.0",
-  "upload_type": "dataset",
+  "upload_type": "software",
   "description": "A curated and evidence-graded list of System One models (typed probabilistic decision models), maintained alongside the survey From Calibrated Classifiers to Decision Contracts: A Survey of System One Models (Rafe and Das, manuscript under review). It reflects the survey cutoff of 24 September 2026.",
   "access_right": "open",
   "license": "cc-by-4.0",
