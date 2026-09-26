@@ -20,7 +20,7 @@ row,model,code,label,url
 7,thisthat,L,Cheng et al. (2026),https://arxiv.org/abs/2609.23886
 7,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
 7,comparator,L,Zhang et al. (2026),https://arxiv.org/abs/2609.27678
-8,jev,L,Sun and Xu (2026),https://arxiv.org/abs/2609.26758
+8,jev,L,Sun et al. (2026),https://arxiv.org/abs/2609.26758
 8,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
 8,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
 9,jev,L,Wu and Lim (2026),https://arxiv.org/abs/2609.26532
