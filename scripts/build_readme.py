@@ -209,7 +209,7 @@ A("\n".join(badges) + "\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
 A(f"Maintained alongside &nbsp;<strong>{meta['survey']['title']}</strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em> &nbsp; "
-  f"<img src=\"{badge('survey', 'under review', '1d4776')}\" alt=\"survey under review\"/>\n")
+  f"<img src=\"{badge('survey', 'in preparation', '1d4776')}\" alt=\"survey in preparation\"/>\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
 A('### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*\n')
@@ -271,7 +271,7 @@ stat_lines = [
     + ", ".join(f"{s['code']} {gc[s['code']]}" for s in meta["streams"]),
     f"- **☁️ Hosted decision models**: {hosted_n} (Jev 1.13, TypeSafe AI)",
     f"- **🔓 Open original implementations on Hugging Face (T1)**: " + (f"{len(t1)} checkpoints in {counts['hf.t1Families']} families, " if len(t1) == int(counts['hf.t1Count'])
-         else f"{len(t1)} checkpoints ({counts['hf.t1Count']} in {counts['hf.t1Families']} families at the v1.0 cutoff), ")
+         else f"{len(t1)} checkpoints ({counts['hf.t1Count']} in {counts['hf.t1Families']} families at the cutoff), ")
     + f"{counts['hf.t1.distinctBackboneFamilies']} backbone families, first releases {counts['hf.t1.releaseDateSpan']}",
     f"- **🧬 Derivatives (T2)**: {counts['hf.t2Count']} (format conversions {counts['hf.t2.formatConversion']}, quantizations {counts['hf.t2.quantization']}, "
     f"language fine-tunes {counts['hf.t2.finetuneLanguage']}, domain fine-tunes {counts['hf.t2.finetuneDomain']}, merges {counts['hf.t2.merge']}, other {counts['hf.t2.other']})",
@@ -558,7 +558,7 @@ A("Additions follow the survey's inclusion rules. A study enters the evidence ta
 A("## 📝 How to cite\n")
 A("If this list helps your work, please cite the survey it accompanies.\n")
 A("```bibtex\n@unpublished{rafe2026decisioncontracts,\n  author = {Rafe, Amir and Das, Subasish},\n"
-  f"  title  = {{{meta['survey']['title']}}},\n  year   = {{{meta['survey']['year']}}},\n  note   = {{Manuscript under review}}\n}}\n```\n")
+  f"  title  = {{{meta['survey']['title']}}},\n  year   = {{{meta['survey']['year']}}},\n  note   = {{Manuscript in preparation}}\n}}\n```\n")
 A("To cite the list itself, use [CITATION.cff](CITATION.cff) or:\n")
 A("```bibtex\n@misc{rafe2026awesomesystemone,\n  author       = {Rafe, Amir and Das, Subasish},\n"
   "  title        = {{Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models}},\n"

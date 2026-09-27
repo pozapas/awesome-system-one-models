@@ -12,7 +12,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/pozapas/awesome-system-one-models.svg?style=social&label=Star)](https://github.com/pozapas/awesome-system-one-models)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-September%202026-blue.svg?style=flat-square)](https://github.com/pozapas/awesome-system-one-models/commits/main)
-[![Resources](https://img.shields.io/badge/Resources-556-orange.svg?style=flat-square)](#-at-a-glance)
+[![Resources](https://img.shields.io/badge/Resources-553-orange.svg?style=flat-square)](#-at-a-glance)
 [![Version](https://img.shields.io/badge/version-v1.0%20%C2%B7%20cutoff%202026--09--24-6c3483.svg?style=flat-square)](#-cutoff-and-versioning)
 
 </div>
@@ -21,7 +21,7 @@
 
 <div align="center">
 
-Maintained alongside &nbsp;<strong>From Calibrated Classifiers to Decision Contracts: A Survey of System One Models</strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript under review</em> &nbsp; <img src="https://img.shields.io/badge/survey-under%20review-1d4776.svg?style=flat-square" alt="survey under review"/>
+Maintained alongside &nbsp;<strong>System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts</strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript in preparation</em> &nbsp; <img src="https://img.shields.io/badge/survey-in%20preparation-1d4776.svg?style=flat-square" alt="survey in preparation"/>
 
 </div>
 
@@ -31,7 +31,7 @@ Maintained alongside &nbsp;<strong>From Calibrated Classifiers to Decision Contr
 
 ### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*
 
-**213 registry-verified papers · 27 graded studies · 108 models · 54 datasets · 127 tools**  
+**213 registry-verified papers · 27 graded studies · 105 models · 54 datasets · 127 tools**  
 *Organized by the survey's own structure: genealogy, anatomy, census, evidence, failures, patterns and reporting*
 
 [🧩 Concept](#-what-is-a-system-one-model) • [🌳 Genealogy](#-genealogy) • [🤖 Models](#-models) • [🔬 Evidence](#-evidence) • [🧨 Failure atlas](#-failure-atlas) • [🧱 Patterns](#-design-patterns) • [🤝 Contribute](CONTRIBUTING.md) • [📝 Cite](#-how-to-cite)
@@ -99,8 +99,8 @@ graph TD
 
 - **📄 Registry-verified papers**: 213, of which 166 sit in the five genealogy streams S1 36, S2 26, S3 51, S4 40, S5 13
 - **☁️ Hosted decision models**: 1 (Jev 1.13, TypeSafe AI)
-- **🔓 Open original implementations on Hugging Face (T1)**: 104 checkpoints in 68 families, 15 backbone families, first releases 2026-09-16 to 2026-09-24
-- **🧬 Derivatives (T2)**: 256 (format conversions 142, quantizations 9, language fine-tunes 10, domain fine-tunes 6, merges 4, other 85)
+- **🔓 Open original implementations on Hugging Face (T1)**: 101 checkpoints in 67 families, 15 backbone families, first releases 2026-09-16 to 2026-09-24
+- **🧬 Derivatives (T2)**: 259 (format conversions 142, quantizations 9, language fine-tunes 10, domain fine-tunes 9, merges 4, other 85)
 - **📚 Datasets**: 54 typed-decision datasets on Hugging Face, 8 with a full card
 - **🐙 GitHub repositories screened**: 226 (local servers 48, integrations 54, applications 47, open-model training 36, evaluation 25)
 - **🔬 Evidence ledger**: 394 extracted values from 27 studies; risk of bias low 0, some concerns 15, high 12
@@ -443,7 +443,7 @@ Open label-conditioned heads on public backbones reproduced the typed contract w
 | **Kev** | Jared Palmer | 2026-09-18 | Qwen2.5, Qwen3 and Qwen3.5 backbones | 0.5B to 9B (LoRA r=16) | <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> | Apache-2.0 | [🤗 kev-0.5b](https://huggingface.co/jaredpalmer/kev-0.5b)<br>[🤗 kev-0.6b](https://huggingface.co/jaredpalmer/kev-0.6b)<br>[🤗 kev-0.8b](https://huggingface.co/jaredpalmer/kev-0.8b)<br>[🤗 kev-4b](https://huggingface.co/jaredpalmer/kev-4b)<br>[🤗 kev-8b](https://huggingface.co/jaredpalmer/kev-8b)<br>[🤗 kev-9b](https://huggingface.co/jaredpalmer/kev-9b)<br>[code](https://github.com/jaredpalmer/kev) |
 | **Bespoke-Nimble** | Bespoke Labs | 2026-09-18 | Qwen3.5-9B | 9B (LoRA r=16) | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> | Apache-2.0 | [🤗 Bespoke-Nimble-9B](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B)<br>[code](https://github.com/bespokelabsai/nimble) |
 | **decider** | Mapika | 2026-09-16 | Qwen3.5 backbones | 0.8B to 35B-A3B | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> | Apache-2.0 | [🤗 decider-0.8b](https://huggingface.co/Mapika/decider-0.8b)<br>[🤗 decider-2b](https://huggingface.co/Mapika/decider-2b)<br>[🤗 decider-4b](https://huggingface.co/Mapika/decider-4b)<br>[🤗 decider-35b-a3b](https://huggingface.co/Mapika/decider-35b-a3b)<br>[code](https://github.com/Mapika/decider) |
-| **this-that-model** | FLock.io | 2026-09-20 | decider-2b (Qwen3.5-style hybrid) | 1.9B | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> | MIT | [🤗 this-that-model-1.0](https://huggingface.co/flock-io/this-that-model-1.0)<br>[🤗 this-that-model-1.1](https://huggingface.co/flock-io/this-that-model-1.1)<br>[🤗 this-that-model-1.2](https://huggingface.co/flock-io/this-that-model-1.2)<br>[code](https://github.com/FLock-io/this-that-model) |
+| **this-that-model (fine-tune of decider-2b)** | FLock.io | 2026-09-20 | decider-2b (Qwen3.5-style hybrid) | 1.9B | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> | MIT | [🤗 this-that-model-1.0](https://huggingface.co/flock-io/this-that-model-1.0)<br>[🤗 this-that-model-1.1](https://huggingface.co/flock-io/this-that-model-1.1)<br>[🤗 this-that-model-1.2](https://huggingface.co/flock-io/this-that-model-1.2)<br>[code](https://github.com/FLock-io/this-that-model) |
 | **OpenThai-SystemOne** | iApp / OpenThaiGPT | 2026-09-20 | Qwen3.5-0.8B, continued pretraining on Thai text | 0.75B | <img src="https://img.shields.io/badge/head-Fixed%20slots-8e44ad.svg?style=flat-square" alt="Fixed slots"/> | Apache-2.0 | [🤗 OpenThai-SystemOne](https://huggingface.co/iapp/OpenThai-SystemOne) |
 | **Von** | wfzyx | 2026-09-19 | ModernBERT-large | 0.40B | <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> | Apache-2.0 | [🤗 von-1.0](https://huggingface.co/wfzyx/von-1.0)<br>[code](https://github.com/wfzyx/von) |
 | **Decision-1.0** | llm-semantic-router | 2026-09-21 | Qwen3.5-2B (Sol); Qwen3.5-4B and 9B siblings | 2B (Sol) | <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> | Apache-2.0 | [🤗 Decision-1.0-Sol-2B](https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B) |
@@ -464,7 +464,7 @@ Open label-conditioned heads on public backbones reproduced the typed contract w
 | Kev | LoRA adapter plus a pointer head reading option logits | Choice, Noul, Score | T = 2.35 (0.8B) and T = 2.30 (9B), fitted per checkpoint |
 | Bespoke-Nimble | LoRA adapter scoring the allowed answer tokens directly | Choice, Score, Noul | T = 2.179 as fitted on checkpoint original-2676; later revision ships at default temperature |
 | decider | Letter-logit readout from the LM head, divided by a stored temperature | Noul, Choice, Score | T = 1.30 (2b, v10); other sizes store 1.03 to 1.94 |
-| this-that-model | Inherits the decider-2b letter-logit readout | Choice-style typed decisions | Not disclosed for 1.0 and 1.1; 1.2 reports 0.009 Brier on a third-party cohort |
+| this-that-model (fine-tune of decider-2b) | Inherits the decider-2b letter-logit readout | Choice-style typed decisions | Not disclosed for 1.0 and 1.1; 1.2 reports 0.009 Brier on a third-party cohort |
 | OpenThai-SystemOne | 256-way slot head replacing the LM head | Choice (up to 255), Score, Noul | Per-type learned temperatures (choice 1.055, noul 1.047, score 1.008) |
 | Von | Option-marker head with an order-invariant attention mask (v1.2) | Choice-style, Noul | Input-conditioned calibration map; ECE 0.045 to 0.109 across difficulty tiers |
 | Decision-1.0 | Shared candidate head reading candidate endpoints and the query vector | Choice (2 to 255), Noul, Score | Not disclosed |
@@ -479,7 +479,7 @@ Open label-conditioned heads on public backbones reproduced the typed contract w
 </details>
 
 <details>
-<summary>🧾 <strong>Full census of open original implementations</strong> (104 Hugging Face checkpoints, tier T1)</summary>
+<summary>🧾 <strong>Full census of open original implementations</strong> (101 Hugging Face checkpoints, tier T1)</summary>
 
 Head badges appear only where a full census card describes the decision head; other rows are not classified.
 
@@ -518,7 +518,6 @@ Head badges appear only where a full census card describes the decision head; ot
 | [akhilaaa3/Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) | 2026-09-20 | google/gemma-4-12B-it | n/a | apache-2.0 | · |
 | [altslate/certo-decision-model](https://huggingface.co/altslate/certo-decision-model) | 2026-09-20 | not stated | n/a | mit | · |
 | [azharmo/build-jev-from-scratch](https://huggingface.co/azharmo/build-jev-from-scratch) | 2026-09-20 | not stated | n/a | mit | · |
-| [flock-io/this-that-model-1.0](https://huggingface.co/flock-io/this-that-model-1.0) | 2026-09-20 | decider-2b | 1.9B | mit | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [iapp/OpenThai-SystemOne](https://huggingface.co/iapp/OpenThai-SystemOne) | 2026-09-20 | Qwen/Qwen3.5-0.8B-Base | 753M | apache-2.0 | <img src="https://img.shields.io/badge/head-Fixed%20slots-8e44ad.svg?style=flat-square" alt="Fixed slots"/> |
 | [jaredpalmer/kev-0.8b](https://huggingface.co/jaredpalmer/kev-0.8b) | 2026-09-20 | Qwen/Qwen3.5-0.8B-Base | n/a | apache-2.0 | <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> |
 | [jaredpalmer/kev-9b](https://huggingface.co/jaredpalmer/kev-9b) | 2026-09-20 | Qwen/Qwen3.5-9B-Base | n/a | apache-2.0 | <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> |
@@ -544,7 +543,6 @@ Head badges appear only where a full census card describes the decision head; ot
 | [SeanLiu/Jev-Vision](https://huggingface.co/SeanLiu/Jev-Vision) | 2026-09-21 | Qwen/Qwen3-VL-8B-Instruct | n/a | apache-2.0 | · |
 | [ait-hf/certus-jev-like-v0007](https://huggingface.co/ait-hf/certus-jev-like-v0007) | 2026-09-22 | Qwen/Qwen2.5-1.5B-Instruct | n/a | apache-2.0 | · |
 | [alibiserikbay/JevK5](https://huggingface.co/alibiserikbay/JevK5) | 2026-09-22 | Qwen/Qwen3.5-4B | 4.2B | apache-2.0 | · |
-| [flock-io/this-that-model-1.1](https://huggingface.co/flock-io/this-that-model-1.1) | 2026-09-22 | decider-2b | 1.9B | mit | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [FluidInference/kev-0-5b-coreml](https://huggingface.co/FluidInference/kev-0-5b-coreml) | 2026-09-22 | not stated | n/a | apache-2.0 | · |
 | [IJyad/jeb-typed-decisions](https://huggingface.co/IJyad/jeb-typed-decisions) | 2026-09-22 | IJyad/jeb | 178M | apache-2.0 | · |
 | [jaswanthsanjay88/rev-decision-model](https://huggingface.co/jaswanthsanjay88/rev-decision-model) | 2026-09-22 | not stated | 421M | apache-2.0 | · |
@@ -570,7 +568,6 @@ Head badges appear only where a full census card describes the decision head; ot
 | [chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2) | 2026-09-23 | Qwen/Qwen3.5-2B-Base | 1.9B | apache-2.0 | · |
 | [DawoodKMasood/jev-gemma-3-270m](https://huggingface.co/DawoodKMasood/jev-gemma-3-270m) | 2026-09-23 | google/gemma-3-270m-it | n/a | not stated | · |
 | [DKNTZMN/gan8-vs-jev](https://huggingface.co/DKNTZMN/gan8-vs-jev) | 2026-09-23 | not stated | n/a | apache-2.0 | · |
-| [flock-io/this-that-model-1.2](https://huggingface.co/flock-io/this-that-model-1.2) | 2026-09-23 | decider-2b | 1.9B | mit | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [guanxuyu/visual-jev-4b-answer-sft](https://huggingface.co/guanxuyu/visual-jev-4b-answer-sft) | 2026-09-23 | Qwen/Qwen3-VL-4B-Instruct | n/a | apache-2.0 | · |
 | [JohnP1/kev-gemma4-e2b](https://huggingface.co/JohnP1/kev-gemma4-e2b) | 2026-09-23 | google/gemma-4-E2B | n/a | apache-2.0 | · |
 | [lostargon/Tiny-Jev-1.7B](https://huggingface.co/lostargon/Tiny-Jev-1.7B) | 2026-09-23 | Qwen/Qwen3-1.7B | 1.7B | apache-2.0 | · |
@@ -593,14 +590,14 @@ Head badges appear only where a full census card describes the decision head; ot
 </details>
 
 <details>
-<summary>🧬 <strong>Derivatives</strong> (256 tier-T2 repositories)</summary>
+<summary>🧬 <strong>Derivatives</strong> (259 tier-T2 repositories)</summary>
 
 | Kind | Count |
 | --- | --- |
 | Format conversions (GGUF, ONNX, MLX and similar) | 142 |
 | Quantizations | 9 |
 | Language fine-tunes | 10 |
-| Domain fine-tunes | 6 |
+| Domain fine-tunes | 9 |
 | Merges | 4 |
 | Other | 85 |
 
@@ -611,8 +608,8 @@ Most-derived parents:
 | [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya) | 122 |
 | [convaiinnovations/laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual) | 25 |
 | [convaiinnovations/laya-typed-decisions](https://huggingface.co/convaiinnovations/laya-typed-decisions) | 10 |
+| [Mapika/decider-2b](https://huggingface.co/Mapika/decider-2b) | 10 |
 | [jaredpalmer/kev-4b](https://huggingface.co/jaredpalmer/kev-4b) | 8 |
-| [Mapika/decider-2b](https://huggingface.co/Mapika/decider-2b) | 7 |
 | [Mapika/decider-0.8b](https://huggingface.co/Mapika/decider-0.8b) | 5 |
 | [jaredpalmer/kev-0.5b](https://huggingface.co/jaredpalmer/kev-0.5b) | 4 |
 | [jaredpalmer/kev-0.8b](https://huggingface.co/jaredpalmer/kev-0.8b) | 4 |
@@ -892,7 +889,7 @@ The evidence ledger holds one row per study, model, task and metric, each with a
 >
 > **R1 · The contract travels.** The contract travels, and robustness to option names belongs to the model family, so it must be tested per model.  
 > **R2 · Calibration is conditional.** Calibration belongs to the model and the task together, and it is audited per schema.  
-> **R3 · The policy earns the saving.** The unit that earns the saving is the escalation policy, not the decision model alone.  
+> **R3 · Escalation earns the saving.** Escalation earns the saving when confidence ranks errors and the price gap is wide.  
 
 <p align="center"><img src="https://img.shields.io/badge/risk%20of%20bias-low%20%C2%B7%200-brightgreen.svg?style=flat-square" alt="low · 0"/> <img src="https://img.shields.io/badge/risk%20of%20bias-some%20concerns%20%C2%B7%2015-yellow.svg?style=flat-square" alt="some concerns · 15"/> <img src="https://img.shields.io/badge/risk%20of%20bias-high%20%C2%B7%2012-red.svg?style=flat-square" alt="high · 12"/></p>
 
@@ -1177,9 +1174,9 @@ If this list helps your work, please cite the survey it accompanies.
 ```bibtex
 @unpublished{rafe2026decisioncontracts,
   author = {Rafe, Amir and Das, Subasish},
-  title  = {From Calibrated Classifiers to Decision Contracts: A Survey of System One Models},
+  title  = {System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts},
   year   = {2026},
-  note   = {Manuscript under review}
+  note   = {Manuscript in preparation}
 }
 ```
 
