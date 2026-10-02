@@ -208,7 +208,7 @@ badges = [
 A("\n".join(badges) + "\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
-A(f"Maintained alongside &nbsp;<strong>{meta['survey']['title']}</strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em> &nbsp; "
+A(f"Maintained alongside &nbsp;<strong>{meta['survey']['title']}</strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em>, with the companion benchmark <a href=\"{meta['benchmark']['url']}\">{meta['benchmark']['short']}</a> &nbsp; "
   f"<img src=\"{badge('survey', 'in preparation', '1d4776')}\" alt=\"survey in preparation\"/>\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
@@ -487,7 +487,7 @@ for r in atlas:
         parts.setdefault(names[s["model"]], []).append(f"[{esc(s['label'])}]({s['url']})<sup>{s['code']}</sup>")
     src_lines.append(f"- **{r['row']}. {r['failure_mode']}**: " + "; ".join(f"{m} ({', '.join(v)})" for m, v in parts.items()))
 A(details("🔎 <strong>Sources behind each vendor and ledger mark</strong>",
-          "\n".join(src_lines) + "\n\nBenchmark marks come from the companion benchmark and are not linked until it is public.") + "\n")
+          "\n".join(src_lines) + "\n\nBenchmark marks come from the companion benchmark, [Rafe and Das (2026)](https://arxiv.org/abs/2610.00346).") + "\n")
 
 # ============================================================================= patterns
 A("## 🧱 Design patterns\n")

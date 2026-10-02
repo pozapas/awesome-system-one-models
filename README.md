@@ -21,7 +21,7 @@
 
 <div align="center">
 
-Maintained alongside &nbsp;<strong>System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts</strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript in preparation</em> &nbsp; <img src="https://img.shields.io/badge/survey-in%20preparation-1d4776.svg?style=flat-square" alt="survey in preparation"/>
+Maintained alongside &nbsp;<strong>System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts</strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript in preparation</em>, with the companion benchmark <a href="https://arxiv.org/abs/2610.00346">arXiv:2610.00346</a> &nbsp; <img src="https://img.shields.io/badge/survey-in%20preparation-1d4776.svg?style=flat-square" alt="survey in preparation"/>
 
 </div>
 
@@ -968,7 +968,7 @@ Fifteen failure modes crossed with the hosted model, the open families of the co
 - **14. Shipped over-confidence**: Jev 1.13 ([Ibrahim and Zaki (2026)](https://arxiv.org/abs/2609.24574)<sup>L</sup>, [Jev's Architecture Unmasked](https://archerhume.com/posts/jevs-architecture-unmasked/)<sup>L</sup>, [typed-decisions dataset card](https://huggingface.co/datasets/LocalLLaMA/typed-decisions)<sup>L</sup>); Laya ([convaiinnovations/laya card](https://huggingface.co/convaiinnovations/laya)<sup>V</sup>, [Laya and Laya multilingual model cards](https://huggingface.co/convaiinnovations/laya)<sup>L</sup>); Kev ([Kev-9B model card and repository](https://huggingface.co/jaredpalmer/kev-9b)<sup>L</sup>); Nimble ([Bespoke-Nimble-9B model card and repository](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B)<sup>L</sup>); this-that ([Cheng et al. (2026)](https://arxiv.org/abs/2609.23886)<sup>L</sup>); Generative comparator ([Ibrahim and Zaki (2026)](https://arxiv.org/abs/2609.24574)<sup>L</sup>)
 - **15. Teacher-consensus benchmark bias**: Jev 1.13 ([typed-decisions dataset card](https://huggingface.co/datasets/LocalLLaMA/typed-decisions)<sup>L</sup>); Laya ([Laya and Laya multilingual model cards](https://huggingface.co/convaiinnovations/laya)<sup>L</sup>); Nimble ([bespokelabs/Bespoke-Nimble-9B card](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B)<sup>V</sup>)
 
-Benchmark marks come from the companion benchmark and are not linked until it is public.
+Benchmark marks come from the companion benchmark, [Rafe and Das (2026)](https://arxiv.org/abs/2610.00346).
 
 </details>
 

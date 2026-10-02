@@ -3,6 +3,11 @@
   "version": "1.0",
   "cutoff": "2026-09-24",
   "last_updated_badge": "September 2026",
+  "benchmark": {
+    "title": "Benchmarking System One decision models against trained classifiers and language models for automated decision gates",
+    "short": "arXiv:2610.00346",
+    "url": "https://arxiv.org/abs/2610.00346"
+  },
   "survey": {
     "title": "System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts",
     "authors": "Amir Rafe and Subasish Das",
