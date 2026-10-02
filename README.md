@@ -12,7 +12,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/pozapas/awesome-system-one-models.svg?style=social&label=Star)](https://github.com/pozapas/awesome-system-one-models)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-September%202026-blue.svg?style=flat-square)](https://github.com/pozapas/awesome-system-one-models/commits/main)
-[![Resources](https://img.shields.io/badge/Resources-553-orange.svg?style=flat-square)](#-at-a-glance)
+[![Resources](https://img.shields.io/badge/Resources-554-orange.svg?style=flat-square)](#-at-a-glance)
 [![Version](https://img.shields.io/badge/version-v1.0%20%C2%B7%20cutoff%202026--09--24-6c3483.svg?style=flat-square)](#-cutoff-and-versioning)
 
 </div>
@@ -31,7 +31,7 @@ Maintained alongside &nbsp;<strong>System One Decision Models: A Survey from Cal
 
 ### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*
 
-**213 registry-verified papers · 27 graded studies · 105 models · 54 datasets · 127 tools**  
+**214 registry-verified papers · 27 graded studies · 105 models · 54 datasets · 127 tools**  
 *Organized by the survey's own structure: genealogy, anatomy, census, evidence, failures, patterns and reporting*
 
 [🧩 Concept](#-what-is-a-system-one-model) • [🌳 Genealogy](#-genealogy) • [🤖 Models](#-models) • [🔬 Evidence](#-evidence) • [🧨 Failure atlas](#-failure-atlas) • [🧱 Patterns](#-design-patterns) • [🤝 Contribute](CONTRIBUTING.md) • [📝 Cite](#-how-to-cite)
@@ -97,7 +97,7 @@ graph TD
 <details>
 <summary>📊 <strong>Repository statistics</strong> (click to expand)</summary>
 
-- **📄 Registry-verified papers**: 213, of which 166 sit in the five genealogy streams S1 36, S2 26, S3 51, S4 40, S5 13
+- **📄 Registry-verified papers**: 214, of which 166 sit in the five genealogy streams S1 36, S2 26, S3 51, S4 40, S5 13
 - **☁️ Hosted decision models**: 1 (Jev 1.13, TypeSafe AI)
 - **🔓 Open original implementations on Hugging Face (T1)**: 101 checkpoints in 67 families, 15 backbone families, first releases 2026-09-16 to 2026-09-24
 - **🧬 Derivatives (T2)**: 259 (format conversions 142, quantizations 9, language fine-tunes 10, domain fine-tunes 9, merges 4, other 85)
@@ -1053,6 +1053,7 @@ Pin the model and its revision, the serving temperature, the schema with its opt
 | 2026 | [A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions](https://doi.org/10.1145/3744238) 📖 | Shorinwa | ACM Computing Surveys |
 | 2026 | [Doing More with Less: A Survey on Routing Strategies for Resource Optimisation in Large Language Model-Based Systems](https://doi.org/10.1613/jair.1.19801) 📖 | Varangot-Reille | Journal of Artificial Intelligence Research |
 | 2026 | [Dynamic Model Routing and Cascading for Efficient LLM Inference: A Survey](https://arxiv.org/abs/2603.04445) 📖 | Moslem | arXiv |
+| 2026 | [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](https://arxiv.org/abs/2609.30216) | Ling | arXiv |
 
 <details>
 <summary>🧾 Reporting and appraisal standards <strong>(17)</strong></summary>
@@ -1082,7 +1083,7 @@ Precedents for the checklist and the risk-of-bias domains.
 </details>
 
 <details>
-<summary>🔧 Adjacent lines <strong>(16)</strong></summary>
+<summary>🔧 Adjacent lines <strong>(17)</strong></summary>
 
 Constrained decoding, structured output, tool use and serving. These obtain a valid type from a sampled sequence and are the natural comparator rather than an ancestor.
 
@@ -1104,6 +1105,7 @@ Constrained decoding, structured output, tool use and serving. These obtain a va
 | 2024 | [Let Me Speak Freely? A Study On The Impact Of Format Restrictions On Large Language Model Performance](https://doi.org/10.18653/v1/2024.emnlp-industry.91) 📖 | Tam | EMNLP |
 | 2024 | [SGLang: Efficient Execution of Structured Language Model Programs](https://doi.org/10.52202/079017-2000) | Zheng | NeurIPS |
 | 2024 | [XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models](https://arxiv.org/abs/2411.15100) 📖 | Dong | arXiv |
+| 2026 | [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](https://arxiv.org/abs/2609.30216) | Ling | arXiv |
 
 </details>
 
