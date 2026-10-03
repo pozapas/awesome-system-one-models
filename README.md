@@ -12,7 +12,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/pozapas/awesome-system-one-models.svg?style=social&label=Star)](https://github.com/pozapas/awesome-system-one-models)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-September%202026-blue.svg?style=flat-square)](https://github.com/pozapas/awesome-system-one-models/commits/main)
-[![Resources](https://img.shields.io/badge/Resources-554-orange.svg?style=flat-square)](#-at-a-glance)
+[![Resources](https://img.shields.io/badge/Resources-556-orange.svg?style=flat-square)](#-at-a-glance)
 [![Version](https://img.shields.io/badge/version-v1.0%20%C2%B7%20cutoff%202026--09--24-6c3483.svg?style=flat-square)](#-cutoff-and-versioning)
 
 </div>
@@ -31,7 +31,7 @@ Maintained alongside &nbsp;<strong>System One Decision Models: A Survey from Cal
 
 ### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*
 
-**214 registry-verified papers · 27 graded studies · 105 models · 54 datasets · 127 tools**  
+**214 registry-verified papers · 27 graded studies · 106 models · 54 datasets · 128 tools**  
 *Organized by the survey's own structure: genealogy, anatomy, census, evidence, failures, patterns and reporting*
 
 [🧩 Concept](#-what-is-a-system-one-model) • [🌳 Genealogy](#-genealogy) • [🤖 Models](#-models) • [🔬 Evidence](#-evidence) • [🧨 Failure atlas](#-failure-atlas) • [🧱 Patterns](#-design-patterns) • [🤝 Contribute](CONTRIBUTING.md) • [📝 Cite](#-how-to-cite)
@@ -99,7 +99,7 @@ graph TD
 
 - **📄 Registry-verified papers**: 214, of which 166 sit in the five genealogy streams S1 36, S2 26, S3 51, S4 40, S5 13
 - **☁️ Hosted decision models**: 1 (Jev 1.13, TypeSafe AI)
-- **🔓 Open original implementations on Hugging Face (T1)**: 101 checkpoints in 67 families, 15 backbone families, first releases 2026-09-16 to 2026-09-24
+- **🔓 Open original implementations on Hugging Face (T1)**: 102 checkpoints (101 in 67 families at the cutoff), 15 backbone families, first releases 2026-09-16 to 2026-09-24
 - **🧬 Derivatives (T2)**: 259 (format conversions 142, quantizations 9, language fine-tunes 10, domain fine-tunes 9, merges 4, other 85)
 - **📚 Datasets**: 54 typed-decision datasets on Hugging Face, 8 with a full card
 - **🐙 GitHub repositories screened**: 226 (local servers 48, integrations 54, applications 47, open-model training 36, evaluation 25)
@@ -479,7 +479,7 @@ Open label-conditioned heads on public backbones reproduced the typed contract w
 </details>
 
 <details>
-<summary>🧾 <strong>Full census of open original implementations</strong> (101 Hugging Face checkpoints, tier T1)</summary>
+<summary>🧾 <strong>Full census of open original implementations</strong> (102 Hugging Face checkpoints, tier T1)</summary>
 
 Head badges appear only where a full census card describes the decision head; other rows are not classified.
 
@@ -586,6 +586,7 @@ Head badges appear only where a full census card describes the decision head; ot
 | [SargeDev/Jev_Qwen3.8-27B](https://huggingface.co/SargeDev/Jev_Qwen3.8-27B) | 2026-09-24 | huihui-ai/Huihui-Qwen3.8-27B-abliterated | 26.9B | apache-2.0 | · |
 | [VTXAI/VTX-JEV-1](https://huggingface.co/VTXAI/VTX-JEV-1) | 2026-09-24 | not stated | 7M | apache-2.0 | · |
 | [wwydmanski/bielik-minitron-jev-v0.3](https://huggingface.co/wwydmanski/bielik-minitron-jev-v0.3) | 2026-09-24 | speakleash/Bielik-Minitron-7B-v3.0-Instruct | n/a | apache-2.0 | · |
+| [samratduttaofficial/WaterSheep](https://huggingface.co/samratduttaofficial/WaterSheep) | 2026-09-29 | answerdotai/ModernBERT-base | n/a | apache-2.0 | · |
 
 </details>
 
@@ -833,7 +834,7 @@ Each entry has a census card with a pinned commit. Stars are as recorded on the 
 </details>
 
 <details>
-<summary>🏗️ Open-model training code <strong>(40)</strong></summary>
+<summary>🏗️ Open-model training code <strong>(41)</strong></summary>
 
 | Repository | ⭐ | License | Created | What it does |
 | --- | ---: | --- | --- | --- |
@@ -866,6 +867,7 @@ Each entry has a census card with a pinned commit. Stars are as recorded on the 
 | [lev](https://github.com/franckverrot/lev) | 4 | Apache-2.0 | 2026-09-21 | Jev-style decision model based on LFM2.5-350M |
 | [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) | 4 | unknown | 2026-09-16 | Jev-style calibrated decision model (Choice/Score/Noul) on Qwen3.5-0.8B |
 | [system-one-gemma](https://github.com/akash-kamat/system-one-gemma) | 4 | unknown | 2026-09-17 | Open-source Jev-style System One decision model. Gemma 3 270M with a scoring head, fast, calibrated decisions in a single forward pass. No text generation. Inspired by … |
+| [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) | 3 | Apache-2.0 | 2026-09-29 | Calibrated answers to yes/no, choice, score and multi-label questions. Includes the training pipeline, an ONNX build for the browser and a local /v1/systemone server. |
 | [metask-jev](https://github.com/metask-ai/metask-jev) | 2 | unknown | 2026-09-21 | Metask-Jev: calibrated typed-decision models (Jev-class). Single forward pass, candidate-logit readout. metask-jev-4b beats Bespoke Nimble-9B and Jev on JevBench. |
 | [laya-ko-decision-onnx](https://github.com/2nugu/laya-ko-decision-onnx) | 1 | Apache-2.0 | 2026-09-23 | Korean fine-tuned Laya decision model. Includes PyTorch training pipeline and ONNX export scripts for Rust integration. |
 | [laya-micro](https://github.com/osamabinIaggin/laya-micro) | 1 | MIT | 2026-09-22 | Shrink Convai's Laya typed-decision model to run on single-board computers: BPE-merge-closed vocabulary pruning plus block-wise int8, evaluated on human-labelled robot commands … |
