@@ -71,11 +71,26 @@
     }
   ],
   "heads": {
-    "a": {"name": "Fixed slots", "color": "8e44ad"},
-    "b": {"name": "Option markers", "color": "2e86c1"},
-    "c": {"name": "Label logits", "color": "17a589"},
-    "d": {"name": "Pair scoring", "color": "d68910"},
-    "e": {"name": "Constrained decoding", "color": "7f8c8d"}
+    "a": {
+      "name": "Fixed slots",
+      "color": "8e44ad"
+    },
+    "b": {
+      "name": "Option markers",
+      "color": "2e86c1"
+    },
+    "c": {
+      "name": "Label logits",
+      "color": "17a589"
+    },
+    "d": {
+      "name": "Pair scoring",
+      "color": "d68910"
+    },
+    "e": {
+      "name": "Constrained decoding",
+      "color": "7f8c8d"
+    }
   },
   "regularities": [
     {

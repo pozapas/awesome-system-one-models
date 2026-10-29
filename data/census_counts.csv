@@ -48,12 +48,12 @@ gh12.countDirectoryOrSeo,275
 heads.coded,379
 heads.fixedSlots,30
 heads.fixedSlotsFamilies,19
-heads.optionMarkers,132
-heads.optionMarkersFamilies,99
+heads.optionMarkers,135
+heads.optionMarkersFamilies,102
 heads.labelLogits,171
 heads.labelLogitsFamilies,82
-heads.pairScoring,39
-heads.pairScoringFamilies,28
+heads.pairScoring,36
+heads.pairScoringFamilies,25
 heads.constrainedDecoding,0
 heads.constrainedDecodingFamilies,0
 heads.undisclosed,7

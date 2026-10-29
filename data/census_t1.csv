@@ -24,7 +24,7 @@ jaredpalmer/kev-0.6b,2026-09-19,apache-2.0,,Qwen/Qwen3-0.6B-Base,b
 jaredpalmer/kev-4b,2026-09-19,apache-2.0,,Qwen/Qwen3.5-4B-Base,b
 jaredpalmer/kev-8b,2026-09-19,apache-2.0,,Qwen/Qwen3-8B-Base,b
 lafalce/system-one-model,2026-09-19,apache-2.0,,answerdotai/ModernBERT-base,b
-lewislululu/jevon,2026-09-19,agpl-3.0,,,d
+lewislululu/jevon,2026-09-19,agpl-3.0,,,b
 Mapika/decider-0.8b,2026-09-19,apache-2.0,752M,Qwen/Qwen3.5-0.8B-Base,c
 shreyanbr/system-one-distilled,2026-09-19,apache-2.0,71M,MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33,d
 shreyanbr/system-one-gold,2026-09-19,apache-2.0,71M,MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33,d
@@ -163,11 +163,11 @@ MSGEncrypted/ocf-typed-decisions-mbert-base,2026-09-28,apache-2.0,,answerdotai/M
 rongxinzy/LightJev-0.6B-typed-decisions,2026-09-28,apache-2.0,,Qwen/Qwen3-0.6B,b
 sainath/tiny-jev-support-v03-supervised,2026-09-28,apache-2.0,,Qwen/Qwen3-1.7B,d
 shgao/rsi-jev-v3.0-qwen3.5-2b,2026-09-28,apache-2.0,,Qwen/Qwen3.5-2B-Base,b
-tasksource/tasksource-decider-nano,2026-09-28,apache-2.0,,cross-encoder/ettin-reranker-150m-v1,d
+tasksource/tasksource-decider-nano,2026-09-28,apache-2.0,,cross-encoder/ettin-reranker-150m-v1,b
 ytbai/MiniCPM5-2B-Jev,2026-09-28,apache-2.0,,openbmb/MiniCPM5-2B,a
 autotrust/JEV-Gemma4-26B-A4B,2026-09-29,apache-2.0,,google/gemma-4-26B-A4B-it,a
 flymy-ai/decision-4b-v1.5,2026-09-29,apache-2.0,,Qwen/Qwen3.5-4B,c
-hotchpotch/bekko-system-one-v0-17m,2026-09-29,not stated,,cross-encoder/ettin-reranker-17m-v1,d
+hotchpotch/bekko-system-one-v0-17m,2026-09-29,not stated,,cross-encoder/ettin-reranker-17m-v1,b
 Mapika/decider-12b,2026-09-29,apache-2.0,,google/gemma-4-12B-it,c
 Mapika/decider-chat-gemma4-31b,2026-09-29,apache-2.0,,google/gemma-4-31B-it,c
 Mapika/decider-chat-qwen3.6-27b,2026-09-29,apache-2.0,,Qwen/Qwen3.6-27B,c
