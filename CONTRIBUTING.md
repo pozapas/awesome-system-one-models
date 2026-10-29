@@ -15,7 +15,7 @@
 
 ## 🌟 What belongs here
 
-This list accompanies the survey *System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts* (Rafe and Das, manuscript in preparation). It covers typed probabilistic decision models, meaning models that map a state and a caller-declared typed question (Choice, Score or Noul) to a probability distribution over a finite answer space without generating text, together with the research lines, datasets, tools and evidence around them.
+This list accompanies the survey *System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence* (Rafe and Das, manuscript under review). It covers typed probabilistic decision models, meaning models that map a state and a caller-declared typed question (Choice, Score or Noul) to a probability distribution over a finite answer space without generating text, together with the research lines, datasets, tools and evidence around them.
 
 The inclusion rules follow the survey's evidence protocol.
 
@@ -84,7 +84,7 @@ A grade describes the evidence behind a study's numbers, not the quality of the 
 
 ## 🕒 Versioning and corrections
 
-- The list reflects the survey cutoff of **24 September 2026** as version **v1.0**. Later additions are released as minor versions (v1.1, v1.2 and so on), each with its own cutoff date.
+- The list reflects the survey cutoff of **28 October 2026** as version **v1.2**; version **v1.0** had the cutoff of 24 September 2026. Later additions are released as minor versions, each with its own cutoff date.
 - Values are never edited in place. A correction adds a row that supersedes the old one, so the history stays auditable.
 - Model entries record the revision or creation date they describe, because a served checkpoint can change behind an unchanged name.
 

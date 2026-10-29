@@ -1,6 +1,6 @@
 fact,value,source
 Pinned model ID,jev-1.13.0,https://docs.typesafe.ai/models
-jev-latest resolves to,jev-1.13.0,https://docs.typesafe.ai/models
+jev-latest resolves to,jev-1.14.0 (from 14 October 2026),https://docs.typesafe.ai/models.md
 Choice options (max),255,https://docs.typesafe.ai/primitives/choice
 Score levels (min),2,https://docs.typesafe.ai/primitives/score
 Score levels (max),10,https://docs.typesafe.ai/primitives/score

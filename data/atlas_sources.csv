@@ -1,6 +1,6 @@
 row,model,code,label,url
 1,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
-1,jev,L,Huang et al. (2026),https://arxiv.org/abs/2609.27607
+1,jev,L,"Huang et al. (2026, 2609.27607)",https://arxiv.org/abs/2609.27607
 1,thisthat,V,flock-io/this-that-model-1.0 card,https://huggingface.co/flock-io/this-that-model-1.0
 1,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
 2,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
@@ -13,17 +13,17 @@ row,model,code,label,url
 4,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
 5,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
 6,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
-6,jev,L,Li et al. (2026),https://arxiv.org/abs/2609.26550
+6,jev,L,"Li et al. (2026, 2609.26550)",https://arxiv.org/abs/2609.26550
 7,jev,V,"TypeSafe, Jev 1.13 jaggedness",https://docs.typesafe.ai/model-jaggedness/jev-1.13
 7,jev,L,Jev's Architecture Unmasked,https://archerhume.com/posts/jevs-architecture-unmasked/
-7,jev,L,Zhang et al. (2026),https://arxiv.org/abs/2609.27678
+7,jev,L,"Zhang et al. (2026, 2609.27678)",https://arxiv.org/abs/2609.27678
 7,thisthat,L,Cheng et al. (2026),https://arxiv.org/abs/2609.23886
 7,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
-7,comparator,L,Zhang et al. (2026),https://arxiv.org/abs/2609.27678
-8,jev,L,Sun et al. (2026),https://arxiv.org/abs/2609.26758
+7,comparator,L,"Zhang et al. (2026, 2609.27678)",https://arxiv.org/abs/2609.27678
+8,jev,L,"Sun, Xu, Shi and Yang (2026)",https://arxiv.org/abs/2609.26758
 8,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
 8,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
-9,jev,L,Wu and Lim (2026),https://arxiv.org/abs/2609.26532
+9,jev,L,"Wu and Lim (2026, 2609.26532)",https://arxiv.org/abs/2609.26532
 9,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
 9,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
 9,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
@@ -34,7 +34,7 @@ row,model,code,label,url
 11,jev,L,Bespoke-Nimble-9B model card and repository,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
 11,decider,V,Mapika/decider-2b card,https://huggingface.co/Mapika/decider-2b
 13,jev,L,Ibrahim and Zaki (2026),https://arxiv.org/abs/2609.24574
-13,jev,L,Li et al. (2026),https://arxiv.org/abs/2609.26550
+13,jev,L,"Li et al. (2026, 2609.26550)",https://arxiv.org/abs/2609.26550
 13,jev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
 13,kev,L,Kev-9B model card and repository,https://huggingface.co/jaredpalmer/kev-9b
 13,laya,V,convaiinnovations/laya card,https://huggingface.co/convaiinnovations/laya
@@ -51,3 +51,93 @@ row,model,code,label,url
 15,jev,L,typed-decisions dataset card,https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 15,laya,L,Laya and Laya multilingual model cards,https://huggingface.co/convaiinnovations/laya
 15,nimble,V,bespokelabs/Bespoke-Nimble-9B card,https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
+1,jev,L,"Li et al. (2026, 2609.33209)",https://arxiv.org/abs/2609.33209
+1,jev,L,Sharma et al. (2026),https://arxiv.org/abs/2610.11392
+1,laya,L,"Azizi et al. (2026, 2610.02586)",https://arxiv.org/abs/2610.02586
+1,comparator,L,"Li et al. (2026, 2609.33209)",https://arxiv.org/abs/2609.33209
+2,jev,L,Zhong et al. (2026),https://arxiv.org/abs/2609.39496
+2,jev,L,"Lai et al. (2026, 2610.16191)",https://arxiv.org/abs/2610.16191
+2,laya,L,Liu (2026),https://arxiv.org/abs/2610.11436
+5,laya,L,Chen (2026),https://arxiv.org/abs/2610.14631
+5,kev,L,Chen (2026),https://arxiv.org/abs/2610.14631
+6,jev,L,Wang et al. (2026),https://arxiv.org/abs/2610.04985
+6,jev,L,Dong et al. (2026),https://arxiv.org/abs/2610.14404
+6,jev,L,"Wu and Lim (2026, 2609.28613)",https://arxiv.org/abs/2609.28613
+6,laya,L,"Azizi et al. (2026, 2610.12292)",https://arxiv.org/abs/2610.12292
+6,decider,L,Lan et al. (2026),https://arxiv.org/abs/2610.19118
+6,decider,L,Hu et al. (2026),https://arxiv.org/abs/2609.31142
+6,comparator,L,"Li et al. (2026, 2610.17820)",https://arxiv.org/abs/2610.17820
+7,jev,L,"Lai et al. (2026, 2610.30045)",https://arxiv.org/abs/2610.30045
+7,jev,L,You et al. (2026),https://arxiv.org/abs/2610.24692
+7,jev,L,Sharma et al. (2026),https://arxiv.org/abs/2610.11392
+7,jev,L,Teke (2026),https://arxiv.org/abs/2610.02293
+7,jev,L,"Zhang et al. (2026, 2610.19536)",https://arxiv.org/abs/2610.19536
+7,kev,L,Teke (2026),https://arxiv.org/abs/2610.02293
+7,kev,L,Sharma et al. (2026),https://arxiv.org/abs/2610.11392
+7,comparator,L,"Zhang et al. (2026, 2610.19536)",https://arxiv.org/abs/2610.19536
+7,jev,L,"Huang et al. (2026, 2610.18233)",https://arxiv.org/abs/2610.18233
+7,jev,L,Li and Wang (2026),https://arxiv.org/abs/2610.18773
+7,jev,L,Joy (2026),https://arxiv.org/abs/2609.33971
+7,jev,L,Song et al. (2026),https://arxiv.org/abs/2610.35826
+8,jev,L,Chen and Le (2026),https://arxiv.org/abs/2610.15710
+7,jev,L,Li (2026),https://arxiv.org/abs/2610.02267
+8,jev,L,"Zhang et al. (2026, 2610.19536)",https://arxiv.org/abs/2610.19536
+7,laya,L,"Huang et al. (2026, 2610.18233)",https://arxiv.org/abs/2610.18233
+7,laya,L,Joy (2026),https://arxiv.org/abs/2609.33971
+7,laya,L,Nandakishore (2026),https://arxiv.org/abs/2609.33843
+7,kev,L,"Zhuang et al. (2026, 2610.28522)",https://arxiv.org/abs/2610.28522
+7,kev,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+8,kev,L,"Zhang et al. (2026, 2610.19536)",https://arxiv.org/abs/2610.19536
+7,kev,L,Chen (2026),https://arxiv.org/abs/2610.14631
+7,nimble,L,Chen (2026),https://arxiv.org/abs/2610.14631
+7,decider,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+7,decider,L,Li and Xie (2026),https://arxiv.org/abs/2610.34816
+7,comparator,L,"Huang et al. (2026, 2610.18233)",https://arxiv.org/abs/2610.18233
+7,comparator,L,Panchal (2026),https://arxiv.org/abs/2610.17175
+9,jev,L,Rajput et al. (2026),https://arxiv.org/abs/2610.16655
+9,jev,L,Teng et al. (2026),https://arxiv.org/abs/2610.22066
+9,jev,L,Lyu and Xia (2026),https://arxiv.org/abs/2609.40241
+9,jev,L,"Li et al. (2026, 2610.17820)",https://arxiv.org/abs/2610.17820
+9,laya,L,Joy (2026),https://arxiv.org/abs/2609.33971
+9,kev,L,Rajput et al. (2026),https://arxiv.org/abs/2610.16655
+10,jev,L,Gao et al. (2026),https://arxiv.org/abs/2609.38827
+10,jev,L,Rao and Callison-Burch (2026),https://arxiv.org/abs/2609.29769
+10,kev,L,Gao et al. (2026),https://arxiv.org/abs/2609.38827
+10,decider,L,Rao and Callison-Burch (2026),https://arxiv.org/abs/2609.29769
+11,jev,L,Sakhawat and Raiyan (2026),https://arxiv.org/abs/2610.22526
+11,jev,L,Fadli et al. (2026),https://arxiv.org/abs/2610.14112
+11,jev,L,Teke (2026),https://arxiv.org/abs/2610.02293
+11,laya,L,Fadli et al. (2026),https://arxiv.org/abs/2610.14112
+11,laya,L,Sakhawat and Raiyan (2026),https://arxiv.org/abs/2610.22526
+11,laya,L,Ha et al. (2026),https://arxiv.org/abs/2610.31422
+11,laya,L,Teke (2026),https://arxiv.org/abs/2610.02293
+11,kev,L,Teke (2026),https://arxiv.org/abs/2610.02293
+11,comparator,L,Fadli et al. (2026),https://arxiv.org/abs/2610.14112
+13,jev,L,Sakhawat and Raiyan (2026),https://arxiv.org/abs/2610.22526
+13,jev,L,Imperatrice et al. (2026),https://arxiv.org/abs/2610.19619
+13,jev,L,Shankaranarayana et al. (2026),https://arxiv.org/abs/2610.01006
+13,jev,L,Brom (2026),https://arxiv.org/abs/2610.36311
+13,laya,L,"Azizi et al. (2026, 2610.02586)",https://arxiv.org/abs/2610.02586
+13,laya,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+13,kev,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+13,decider,L,Liu et al. (2026),https://arxiv.org/abs/2610.37229
+14,jev,L,Deußer et al. (2026),https://arxiv.org/abs/2609.37647
+14,jev,L,"Zhuang et al. (2026, 2610.17309)",https://arxiv.org/abs/2610.17309
+14,jev,L,You et al. (2026),https://arxiv.org/abs/2610.24692
+14,jev,L,Iqbal et al. (2026),https://arxiv.org/abs/2610.26325
+14,jev,L,Brom (2026),https://arxiv.org/abs/2610.36311
+14,laya,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+14,laya,L,Chouhan and Perry (2026),https://arxiv.org/abs/2610.20778
+14,laya,L,Han et al. (2026),https://arxiv.org/abs/2610.25985
+14,kev,L,Bailo (2026),https://arxiv.org/abs/2610.09683
+14,kev,L,"Zhuang et al. (2026, 2610.28522)",https://arxiv.org/abs/2610.28522
+14,nimble,L,Iqbal et al. (2026),https://arxiv.org/abs/2610.26325
+14,nimble,L,Lucca (2026),https://arxiv.org/abs/2610.32955
+14,comparator,L,Denney and DiGiuseppe (2026),https://arxiv.org/abs/2610.06625
+14,comparator,L,Sudjianto and Burakov (2026),https://arxiv.org/abs/2610.26797
+14,comparator,L,Fadli et al. (2026),https://arxiv.org/abs/2610.14112
+15,jev,L,Teke (2026),https://arxiv.org/abs/2610.02293
+15,jev,L,Chouhan and Perry (2026),https://arxiv.org/abs/2610.20778
+15,laya,L,Chouhan and Perry (2026),https://arxiv.org/abs/2610.20778
+15,laya,L,Teke (2026),https://arxiv.org/abs/2610.02293
+15,kev,L,Teke (2026),https://arxiv.org/abs/2610.02293

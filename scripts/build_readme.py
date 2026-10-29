@@ -93,6 +93,20 @@ def md_table(header, body, align=None):
     return "\n".join(out)
 
 
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November",
+          "December"]
+
+
+def thousands(v):
+    return f"{int(v):,}"
+
+
+def long_date(iso):
+    """2026-10-28 becomes 28 October 2026."""
+    y, m, d = iso.split("-")
+    return f"{int(d)} {MONTHS[int(m) - 1]} {y}"
+
+
 def details(summary, body, open_=False):
     return f"<details{' open' if open_ else ''}>\n<summary>{summary}</summary>\n\n{body}\n\n</details>"
 
@@ -119,14 +133,19 @@ counts = {r["key"]: r["value"] for r in rows("census_counts.csv")}
 ev = load("evidence_counts.json")
 HEADS = meta["heads"]
 REPO = meta["repo"]
+STATUS = meta["survey"]["status"]                    # for example "manuscript under review"
+STATUS_SHORT = STATUS.replace("manuscript ", "")     # "under review", used in the badge
+CUTOFF = long_date(meta["cutoff"])
+FIRST_CUTOFF = long_date(meta["first_cutoff"])
 
 # ----------------------------------------------------------------------------- consistency checks
-# The v1.0 census and ledger are frozen; the data files may grow after the cutoff but never shrink below them.
+# The counts of the current version are recorded in census_counts.csv and evidence_counts.json (written by
+# survey/src/build_awesome_data.py); a table may grow after the cutoff but never shrink below them.
 rob_n = Counter(s["rob_overall"] or "pending" for s in studies)
 ledger_rows = sum(int(s["rows"] or 0) for s in studies)
 checks = [
-    ("open original implementations (T1)", len(t1), int(counts["hf.t1Count"])),
-    ("census datasets (D)", len(dcensus), int(counts["hf.dCount"])),
+    ("open original implementations (T1)", len(t1), int(counts["total.t1Count"])),
+    ("census datasets (D)", len(dcensus), int(counts["total.dCount"])),
     ("graded studies", len(studies) - rob_n["pending"], int(ev["rob.studiesGraded"])),
     ("ledger rows", ledger_rows, int(ev["ledger.rows"])),
     ("failure modes", len(atlas), 15),
@@ -134,12 +153,17 @@ checks = [
 ]
 bad = [c for c in checks if c[1] < c[2]]
 if bad:
-    sys.exit("Count below the v1.0 release: " + "; ".join(f"{n} {a} < {b}" for n, a, b in bad))
+    sys.exit("Count below the recorded census or ledger count: " + "; ".join(f"{n} {a} < {b}" for n, a, b in bad))
 
 stream_codes = [s["code"] for s in meta["streams"]]
 genealogy = [p for p in papers if p["group"] in stream_codes]
 dataset_ids = {d["id"] for d in dcensus} | {d["id"] for d in dsets}
 hosted_n = 1 + len(hosted_later)
+head_n = Counter(t["head"] for t in t1)
+for k in "abcde":
+    head_n.setdefault(k, 0)
+if head_n["undisclosed"] != int(counts["heads.undisclosed"]) or sum(head_n[k] for k in "abcde") != int(counts["heads.coded"]) - int(counts["heads.undisclosed"]):
+    sys.exit("The decision-head codes in census_t1.csv differ from the counts in census_counts.csv")
 github_only = [f for f in fams if not f["hf"]]
 n_papers = len(papers)
 n_models = hosted_n + len(t1) + len(github_only)
@@ -154,6 +178,8 @@ def paper_row(p):
 def head_badge(code):
     if not code:
         return "not classified"
+    if code == "undisclosed":
+        return "undisclosed"
     h = HEADS[code]
     return img("head", h["name"], h["color"], h["name"])
 
@@ -210,7 +236,7 @@ A("\n".join(badges) + "\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
 A(f"Maintained alongside &nbsp;<strong>{meta['survey']['title']}</strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em>, with the companion benchmark <a href=\"{meta['benchmark']['url']}\">{meta['benchmark']['short']}</a> &nbsp; "
-  f"<img src=\"{badge('survey', 'in preparation', '1d4776')}\" alt=\"survey in preparation\"/>\n")
+  f"<img src=\"{badge('survey', STATUS_SHORT, '1d4776')}\" alt=\"survey {STATUS_SHORT}\"/>\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
 A('### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*\n')
@@ -252,7 +278,7 @@ A("## 🚀 Quick Start\n")
 A("""```mermaid
 graph TD
     A[🎯 Need a typed decision from text or JSON state?] --> B{Hosted API or open weights?}
-    B -->|Hosted| C[☁️ Jev 1.13 through the vendor API]
+    B -->|Hosted| C[☁️ Jev through the vendor API]
     B -->|Open weights| D[🔓 Pick an open family by head, size and license]
     C --> E[🧨 Check the failure atlas for your task]
     D --> E
@@ -270,16 +296,18 @@ tc = Counter(t["category"] for t in tools)
 stat_lines = [
     f"- **📄 Registry-verified papers**: {n_papers}, of which {len(genealogy)} sit in the five genealogy streams "
     + ", ".join(f"{s['code']} {gc[s['code']]}" for s in meta["streams"]),
-    f"- **☁️ Hosted decision models**: {hosted_n} (Jev 1.13, TypeSafe AI" + "".join(f"; {h['name']}, {h['provider']}" for h in hosted_later) + ")",
-    f"- **🔓 Open original implementations on Hugging Face (T1)**: " + (f"{len(t1)} checkpoints in {counts['hf.t1Families']} families, " if len(t1) == int(counts['hf.t1Count'])
-         else f"{len(t1)} checkpoints ({counts['hf.t1Count']} in {counts['hf.t1Families']} families at the cutoff), ")
-    + f"{counts['hf.t1.distinctBackboneFamilies']} backbone families, first releases {counts['hf.t1.releaseDateSpan']}",
-    f"- **🧬 Derivatives (T2)**: {counts['hf.t2Count']} (format conversions {counts['hf.t2.formatConversion']}, quantizations {counts['hf.t2.quantization']}, "
-    f"language fine-tunes {counts['hf.t2.finetuneLanguage']}, domain fine-tunes {counts['hf.t2.finetuneDomain']}, merges {counts['hf.t2.merge']}, other {counts['hf.t2.other']})",
+    f"- **☁️ Hosted and provider-released decision models**: {hosted_n} (Jev 1.13, TypeSafe AI" + "".join(f"; {h['name']}, {h['provider']}" for h in hosted_later) + ")",
+    f"- **🔓 Open original implementations on Hugging Face (T1)**: {len(t1)} checkpoints, {counts['hf.t1Count']} in {counts['hf.t1Families']} recipe families "
+    f"at the first cutoff and {counts['hf12.t1Count']} in {counts['hf12.t1Families']} families added by v{meta['version']}; first releases {counts['total.t1.releaseDateSpan']}; "
+    f"the first census found {counts['hf.t1.distinctBackboneFamilies']} backbone families",
+    "- **🧩 Decision heads (T1)**: " + ", ".join(f"{HEADS[k]['name'].lower()} {head_n[k]}" for k in "abcde") + f", undisclosed {head_n['undisclosed']}",
+    f"- **🧬 Derivatives (T2)**: {thousands(counts['total.t2Count'])} (format conversions {thousands(counts['total.t2.formatConversion'])}, quantizations {thousands(counts['total.t2.quantization'])}, "
+    f"language fine-tunes {thousands(counts['total.t2.finetuneLanguage'])}, domain fine-tunes {thousands(counts['total.t2.finetuneDomain'])}, merges {thousands(counts['total.t2.merge'])}, other {thousands(counts['total.t2.other'])})",
     f"- **📚 Datasets**: {len(dcensus)} typed-decision datasets on Hugging Face, {len(dsets)} with a full card",
-    f"- **🐙 GitHub repositories screened**: {counts['gh.countTotal']} (local servers {counts['gh.countLocalServer']}, integrations {counts['gh.countIntegration']}, "
-    f"applications {counts['gh.countApplication']}, open-model training {counts['gh.countOpenModelTraining']}, evaluation {counts['gh.countEvaluation']})",
-    f"- **🔬 Evidence ledger**: {ledger_rows} extracted values from {len(studies)} studies; risk of bias low {rob_n['low']}, "
+    f"- **🐙 GitHub repositories screened**: {thousands(counts['total.gh.countTotal'])} (applications {thousands(counts['total.gh.countApplication'])}, integrations {thousands(counts['total.gh.countIntegration'])}, "
+    f"evaluation {thousands(counts['total.gh.countEvaluation'])}, local servers {thousands(counts['total.gh.countLocalServer'])}, open-model training {thousands(counts['total.gh.countOpenModelTraining'])}, "
+    f"directories {thousands(counts['total.gh.countDirectoryOrSeo'])}, mirrors {thousands(counts['total.gh.countMirrorOrFork'])}); {counts['gh.countTotal']} at the first cutoff",
+    f"- **🔬 Evidence ledger**: {thousands(ledger_rows)} extracted values from {len(studies)} studies; risk of bias low {rob_n['low']}, "
     f"some concerns {rob_n['some_concerns']}, high {rob_n['high']}" + (f", pending {rob_n['pending']}" if rob_n['pending'] else ""),
     f"- **🧨 Failure modes**: {len(atlas)} · **🧱 Design patterns**: {len(patterns)} · **✅ Checklist items**: {len(checklist)} in 5 groups",
     f"- **🕒 Cutoff**: {meta['cutoff']} (v{meta['version']})",
@@ -342,19 +370,21 @@ A("## 🤖 Models\n")
 A("### ☁️ Hosted models\n")
 A("**Jev 1.13** from TypeSafe AI launched on 15 September 2026 with the post that introduced the System One name. "
   "Its weights, architecture and RLCD training recipe are not published, so statements about its internals rest on the "
-  "vendor's own descriptions or on black-box probing. The facts below are the vendor's, as documented on the access date.\n")
+  "vendor's own descriptions or on black-box probing. The facts below are the vendor's, as documented for Jev 1.13 on the first "
+  f"access date; Jev 1.14 is listed further down, and the vendor's documentation now resolves its jev-latest alias to jev-1.14.0.\n")
 A(md_table(["Fact", "Value", "Source"], [[esc(f["fact"]), esc(f["value"]), f"[link]({f['source']})"] for f in facts]) + "\n")
 vdocs = [w_ for w_ in web if w_["kind"] == "vendor documentation"]
 A(details(f"📘 <strong>Vendor documentation and access points</strong> ({len(vdocs)} pages)",
           md_table(["Page", "Publisher", "Page date", "Accessed"],
                    [[f"[{esc(d['title'])}]({d['url']})", esc(d["publisher"]), esc(d["page_date"]), d["accessed"]] for d in vdocs])) + "\n")
 if hosted_later:
-    A("**Added after the cutoff.** These hosted models appeared after 24 September 2026, so the survey's census does not "
-      "count them. Their entries record the publisher's documentation, and any measurement shown is the publisher's own until "
-      "an independent evaluation is listed in the evidence table.\n")
+    A(f"**Released after the first cutoff.** These models appeared after {FIRST_CUTOFF}, and the version {meta['version']} census "
+      f"(cutoff {CUTOFF}) covers them. Their entries record the publisher's documentation. A measurement shown is the publisher's "
+      "own, or a result from a community leaderboard, until an independent evaluation is listed in the evidence table. "
+      "An entry with no API link has no hosted API in the sources.\n")
     A(md_table(["Model", "Provider", "Released", "Contract", "Limits and price", "Evidence", "Disclosure"],
-               [[f"[{esc(h['name'])}]({h['card']}) · [API]({h['docs']})", esc(h["provider"]), h["released"], esc(h["contract"]),
-                 esc(h["limits"] + "; " + h["price"]), esc(h["evidence"]), esc(h["disclosure"])] for h in hosted_later]) + "\n")
+               [[f"[{esc(h['name'])}]({h['card']})" + (f" · [API]({h['docs']})" if h["docs"] else ""), esc(h["provider"]), h["released"],
+                 esc(h["contract"]), esc(h["limits"] + "; " + h["price"]), esc(h["evidence"]), esc(h["disclosure"])] for h in hosted_later]) + "\n")
 sdk = [t for t in tools if t["category"] in ("vendor_sdk",)]
 A("The official SDKs are " + ", ".join(f"[{t['name']}]({t['repo']})" for t in sdk[:-1])
   + f" and [{sdk[-1]['name']}]({sdk[-1]['repo']}).\n")
@@ -382,14 +412,16 @@ A(details("🌡️ <strong>Calibration as shipped, per family</strong>",
 t1_rows = [[f"[{esc(t['id'])}]({hf(t['id'])})", t["created"], esc(t["base_model"]) or "not stated", t["params"] or "n/a",
             esc(t["license"]), head_badge(t["head"]) if t["head"] else "·"] for t in t1]
 A(details(f"🧾 <strong>Full census of open original implementations</strong> ({len(t1)} Hugging Face checkpoints, tier T1)",
-          "Head badges appear only where a full census card describes the decision head; other rows are not classified.\n\n" +
+          f"Each checkpoint is coded by decision head from its own card or code; {head_n['undisclosed']} cards do not say how the "
+          f"distribution is read and are marked undisclosed. The first census ({counts['hf.t1Count']} checkpoints) runs to {FIRST_CUTOFF}, "
+          f"and version {meta['version']} adds {counts['hf12.t1Count']} more up to {CUTOFF}.\n\n" +
           md_table(["Checkpoint", "Created", "Base model", "Params", "License", "Head"], t1_rows)) + "\n")
-A(details(f"🧬 <strong>Derivatives</strong> ({counts['hf.t2Count']} tier-T2 repositories)",
-          md_table(["Kind", "Count"], [["Format conversions (GGUF, ONNX, MLX and similar)", counts["hf.t2.formatConversion"]],
-                                         ["Quantizations", counts["hf.t2.quantization"]],
-                                         ["Language fine-tunes", counts["hf.t2.finetuneLanguage"]],
-                                         ["Domain fine-tunes", counts["hf.t2.finetuneDomain"]],
-                                         ["Merges", counts["hf.t2.merge"]], ["Other", counts["hf.t2.other"]]]) +
+A(details(f"🧬 <strong>Derivatives</strong> ({counts['total.t2Count']} tier-T2 repositories)",
+          md_table(["Kind", "Count"], [["Format conversions (GGUF, ONNX, MLX and similar)", counts["total.t2.formatConversion"]],
+                                         ["Quantizations", counts["total.t2.quantization"]],
+                                         ["Language fine-tunes", counts["total.t2.finetuneLanguage"]],
+                                         ["Domain fine-tunes", counts["total.t2.finetuneDomain"]],
+                                         ["Merges", counts["total.t2.merge"]], ["Other", counts["total.t2.other"]]]) +
           "\n\nMost-derived parents:\n\n" +
           md_table(["Parent", "Derivatives"], [[f"[{p['parent']}]({p['url']})" if p["url"] else f"{p['parent']} (gated or removed)", p["derivatives"]]
                                                 for p in parents])) + "\n")
@@ -414,7 +446,9 @@ A("The vendor also publishes [workflow evals](https://evals.typesafe.ai/), grade
 # ============================================================================= tooling
 A("## 🛠️ Harnesses and tooling\n")
 A("Each entry has a census card with a pinned commit. Stars are as recorded on the census date. Plug-ins for coding "
-  "assistants are counted in the census but not listed individually.\n")
+  "assistants are counted in the census but not listed individually. The entries below come from the first census; the "
+  f"version {meta['version']} sweep screened {counts['gh12.countTotal']} further repositories, which are counted in the statistics "
+  "but not listed.\n")
 CATS = OrderedDict([("vendor_sdk", "📦 Vendor SDKs"), ("vendor_cookbook", "📒 Vendor cookbooks"),
                     ("local_server", "🖥️ Local servers and runtimes"), ("integration", "🔌 Integrations"),
                     ("evaluation", "📏 Evaluation packages and benchmarks"),
@@ -452,7 +486,8 @@ for i, s in enumerate(studies, 1):
     own = " †" if s["own"] == "yes" else ""
     title = f"[{esc(s['title'])}]({s['link']}){own}<br><sub>{esc(s['authors'])} · {s['date']} · {esc(s['role'])}</sub>"
     srows.append([str(i), title, esc(s["task_family"]),
-                  f"{esc(s['decision_models'])}<br><sub>vs. {esc(s['comparators'])}</sub>", esc(s["reference_labels"]),
+                  esc(s["decision_models"]) + (f"<br><sub>vs. {esc(s['comparators'])}</sub>" if s["comparators"] else ""),
+                  esc(s["reference_labels"]),
                   rob_badge(s["rob_overall"])])
 A(md_table(["#", "Study", "Task family", "Decision models", "Reference labels", "Grade"], srows,
            ["---:", "---", "---", "---", "---", "---"]) + "\n")
@@ -465,7 +500,7 @@ A("Fifteen failure modes crossed with the hosted model, the open families of the
   "generative comparator. A ✓ records that evidence on the failure mode exists for that model, not that the failure was "
   "observed; several measured cells are favorable. Superscripts give the source: <sup>V</sup> documented by the vendor or "
   "developer, <sup>L</sup> measured in a ledger study, <sup>B</sup> measured in the authors' companion benchmark "
-  "(manuscript in preparation).\n")
+  f"({meta['benchmark']['short']}).\n")
 MOD = [("jev", "Jev 1.13"), ("laya", "Laya"), ("kev", "Kev"), ("nimble", "Nimble"), ("thisthat", "this-that"),
        ("decider", "decider"), ("comparator", "Generative comparator")]
 
@@ -566,7 +601,7 @@ A("Additions follow the survey's inclusion rules. A study enters the evidence ta
 A("## 📝 How to cite\n")
 A("If this list helps your work, please cite the survey it accompanies.\n")
 A("```bibtex\n@unpublished{rafe2026decisioncontracts,\n  author = {Rafe, Amir and Das, Subasish},\n"
-  f"  title  = {{{meta['survey']['title']}}},\n  year   = {{{meta['survey']['year']}}},\n  note   = {{Manuscript in preparation}}\n}}\n```\n")
+  f"  title  = {{{meta['survey']['title']}}},\n  year   = {{{meta['survey']['year']}}},\n  note   = {{{STATUS[0].upper() + STATUS[1:]}}}\n}}\n```\n")
 A("To cite the list itself, use [CITATION.cff](CITATION.cff) or:\n")
 A("```bibtex\n@misc{rafe2026awesomesystemone,\n  author       = {Rafe, Amir and Das, Subasish},\n"
   "  title        = {{Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models}},\n"
@@ -574,9 +609,14 @@ A("```bibtex\n@misc{rafe2026awesomesystemone,\n  author       = {Rafe, Amir and 
 
 # ============================================================================= cutoff
 A("## 🕒 Cutoff and versioning\n")
-A(f"This is **v{meta['version']}**. It reflects the survey's literature and ecosystem cutoff of **24 September 2026**, and the "
+A(f"This is **v{meta['version']}**. It reflects the survey's literature and ecosystem cutoff of **{CUTOFF}**, and the "
   "list is updated after it. Later additions are released as minor versions with their own cutoff date. Values are never "
   "edited in place; a correction adds a row that supersedes the old one, and model entries record the revision they describe.\n")
+A(f"**v{meta['version']}** (cutoff {CUTOFF}) adds the version {meta['version']} census, which brings the open original implementations to "
+  f"{len(t1)} and codes each by decision head, and it extends the evidence table to {len(studies)} graded studies. It rebuilds the failure atlas "
+  f"with {len(asrc)} sourced marks and lists " + "; ".join(h["name"] for h in hosted_later[:-1]) + f"; and {hosted_later[-1]['name']} among the "
+  f"models released after the first cutoff. **v1.0** (cutoff {FIRST_CUTOFF}) is the survey's first cutoff, with {counts['hf.t1Count']} original "
+  "implementations in its census.\n")
 
 # ============================================================================= license
 A("## 📜 License\n")
