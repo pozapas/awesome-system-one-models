@@ -82,7 +82,7 @@ A System One model, also called a typed probabilistic decision model, maps a sta
 ```mermaid
 graph TD
     A[🎯 Need a typed decision from text or JSON state?] --> B{Hosted API or open weights?}
-    B -->|Hosted| C[☁️ Jev through the vendor API]
+    B -->|Hosted| C[☁️ A hosted model: Jev, Microsoft-Decision-1, Trio-Spark or Clef]
     B -->|Open weights| D[🔓 Pick an open family by head, size and license]
     C --> E[🧨 Check the failure atlas for your task]
     D --> E
@@ -103,7 +103,7 @@ graph TD
 - **🧩 Decision heads (T1)**: fixed slots 30, option markers 132, label logits 171, pair scoring 39, constrained decoding 0, undisclosed 7
 - **🧬 Derivatives (T2)**: 1,370 (format conversions 591, quantizations 110, language fine-tunes 32, domain fine-tunes 345, merges 28, other 264)
 - **📚 Datasets**: 246 typed-decision datasets on Hugging Face, 8 with a full card
-- **🐙 GitHub repositories screened**: 16,014 (applications 6,492, integrations 5,228, evaluation 2,034, local servers 1,094, open-model training 875, directories 290, mirrors 1); 226 at the first cutoff
+- **🐙 GitHub repositories screened**: 16,014 (approximate split from rules and a classifier: applications 6,492, integrations 5,228, evaluation 2,034, local servers 1,094, open-model training 875, directories 290, mirrors 1); 226 at the first cutoff
 - **🔬 Evidence ledger**: 3,388 extracted values from 242 studies; risk of bias low 4, some concerns 94, high 144
 - **🧨 Failure modes**: 15 · **🧱 Design patterns**: 13 · **✅ Checklist items**: 16 in 5 groups
 - **🕒 Cutoff**: 2026-10-28 (v1.2)
@@ -121,6 +121,7 @@ mindmap
       Choice
       Score
       Noul
+      Box
       Versioned artifacts
     Heads
       Fixed slots
@@ -146,7 +147,7 @@ mindmap
 
 The decision contract is best read as a convergence of five older research lines rather than as an invention of September 2026. The timeline places each stream on its own lane; the right panel shows the open implementations that followed the hosted release within days. Papers marked 📖 are discussed in the survey; the others come from the same registry-verified bibliography.
 
-<p align="center"><img src="fig/timeline.png" width="860" alt="Timeline of the five research streams converging on Jev 1.13 on 15 September 2026, followed by open implementations"/></p>
+<p align="center"><img src="fig/timeline.png" width="860" alt="Timeline of the five research streams converging on Jev 1.13 on 15 September 2026, followed by the open and hosted decision-model releases to 28 October 2026"/></p>
 
 | Stream | Contributes | Papers |
 | --- | --- | --- |
@@ -444,7 +445,7 @@ The official SDKs are [system-one-adapter-python](https://github.com/typesafe-ai
 
 Open label-conditioned heads on public backbones reproduced the typed contract within days of the hosted release. The table condenses the notable families with an independent card; each head badge follows the survey's five-way head taxonomy, assigned from the card's own description of its decision head.
 
-<p align="center"><img src="fig/heads.png" width="860" alt="Five decision-head archetypes: fixed slots, option markers, label logits, pair scoring and constrained decoding, with the census families under each"/></p>
+<p align="center"><img src="fig/heads.png" width="860" alt="Five decision-head archetypes: fixed slots, option markers, label logits, pair scoring and constrained decoding, with the number of census originals and families of each type and the families with an independent card"/></p>
 
 <p align="center"><img src="https://img.shields.io/badge/head-Fixed%20slots-8e44ad.svg?style=flat-square" alt="Fixed slots"/> <img src="https://img.shields.io/badge/head-Option%20markers-2e86c1.svg?style=flat-square" alt="Option markers"/> <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> <img src="https://img.shields.io/badge/head-Pair%20scoring-d68910.svg?style=flat-square" alt="Pair scoring"/> <img src="https://img.shields.io/badge/head-Constrained%20decoding-7f8c8d.svg?style=flat-square" alt="Constrained decoding"/></p>
 

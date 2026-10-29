@@ -278,7 +278,7 @@ A("## 🚀 Quick Start\n")
 A("""```mermaid
 graph TD
     A[🎯 Need a typed decision from text or JSON state?] --> B{Hosted API or open weights?}
-    B -->|Hosted| C[☁️ Jev through the vendor API]
+    B -->|Hosted| C[☁️ A hosted model: Jev, Microsoft-Decision-1, Trio-Spark or Clef]
     B -->|Open weights| D[🔓 Pick an open family by head, size and license]
     C --> E[🧨 Check the failure atlas for your task]
     D --> E
@@ -304,7 +304,7 @@ stat_lines = [
     f"- **🧬 Derivatives (T2)**: {thousands(counts['total.t2Count'])} (format conversions {thousands(counts['total.t2.formatConversion'])}, quantizations {thousands(counts['total.t2.quantization'])}, "
     f"language fine-tunes {thousands(counts['total.t2.finetuneLanguage'])}, domain fine-tunes {thousands(counts['total.t2.finetuneDomain'])}, merges {thousands(counts['total.t2.merge'])}, other {thousands(counts['total.t2.other'])})",
     f"- **📚 Datasets**: {len(dcensus)} typed-decision datasets on Hugging Face, {len(dsets)} with a full card",
-    f"- **🐙 GitHub repositories screened**: {thousands(counts['total.gh.countTotal'])} (applications {thousands(counts['total.gh.countApplication'])}, integrations {thousands(counts['total.gh.countIntegration'])}, "
+    f"- **🐙 GitHub repositories screened**: {thousands(counts['total.gh.countTotal'])} (approximate split from rules and a classifier: applications {thousands(counts['total.gh.countApplication'])}, integrations {thousands(counts['total.gh.countIntegration'])}, "
     f"evaluation {thousands(counts['total.gh.countEvaluation'])}, local servers {thousands(counts['total.gh.countLocalServer'])}, open-model training {thousands(counts['total.gh.countOpenModelTraining'])}, "
     f"directories {thousands(counts['total.gh.countDirectoryOrSeo'])}, mirrors {thousands(counts['total.gh.countMirrorOrFork'])}); {counts['gh.countTotal']} at the first cutoff",
     f"- **🔬 Evidence ledger**: {thousands(ledger_rows)} extracted values from {len(studies)} studies; risk of bias low {rob_n['low']}, "
@@ -326,6 +326,7 @@ mindmap
       Choice
       Score
       Noul
+      Box
       Versioned artifacts
     Heads
       Fixed slots
@@ -354,7 +355,7 @@ A("The decision contract is best read as a convergence of five older research li
   "September 2026. The timeline places each stream on its own lane; the right panel shows the open implementations that "
   "followed the hosted release within days. Papers marked 📖 are discussed in the survey; the others come "
   "from the same registry-verified bibliography.\n")
-A('<p align="center"><img src="fig/timeline.png" width="860" alt="Timeline of the five research streams converging on Jev 1.13 on 15 September 2026, followed by open implementations"/></p>\n')
+A('<p align="center"><img src="fig/timeline.png" width="860" alt="Timeline of the five research streams converging on Jev 1.13 on 15 September 2026, followed by the open and hosted decision-model releases to 28 October 2026"/></p>\n')
 A(md_table(["Stream", "Contributes", "Papers"],
            [[f"{s['emoji']} [{s['name']}](#{anchor(s['emoji'] + ' ' + s['code'] + ' ' + s['name'])})", s["gives"], str(gc[s["code"]])]
             for s in meta["streams"]]) + "\n")
@@ -393,7 +394,7 @@ A("### 🔓 Open original implementations\n")
 A("Open label-conditioned heads on public backbones reproduced the typed contract within days of the hosted release. "
   "The table condenses the notable families with an independent card; each head badge follows the survey's five-way head "
   "taxonomy, assigned from the card's own description of its decision head.\n")
-A('<p align="center"><img src="fig/heads.png" width="860" alt="Five decision-head archetypes: fixed slots, option markers, label logits, pair scoring and constrained decoding, with the census families under each"/></p>\n')
+A('<p align="center"><img src="fig/heads.png" width="860" alt="Five decision-head archetypes: fixed slots, option markers, label logits, pair scoring and constrained decoding, with the number of census originals and families of each type and the families with an independent card"/></p>\n')
 A("<p align=\"center\">" + " ".join(img("head", HEADS[k]["name"], HEADS[k]["color"]) for k in "abcde") + "</p>\n")
 fam_rows = []
 for f in fams:
