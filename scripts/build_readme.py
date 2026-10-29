@@ -235,7 +235,7 @@ badges = [
 A("\n".join(badges) + "\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
-A(f"Maintained alongside &nbsp;<strong>{meta['survey']['title']}</strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em>, with the companion benchmark <a href=\"{meta['benchmark']['url']}\">{meta['benchmark']['short']}</a> &nbsp; "
+A(f"Maintained alongside &nbsp;<strong><a href=\"{meta['survey']['url']}\">{meta['survey']['title']}</a></strong> &nbsp;·&nbsp; Rafe and Das, <em>{meta['survey']['status']}</em>, with the companion benchmark <a href=\"{meta['benchmark']['url']}\">{meta['benchmark']['short']}</a> &nbsp; "
   f"<img src=\"{badge('survey', STATUS_SHORT, '1d4776')}\" alt=\"survey {STATUS_SHORT}\"/>\n")
 A("</div>\n\n---\n")
 A('<div align="center">\n')
@@ -600,9 +600,10 @@ A("Additions follow the survey's inclusion rules. A study enters the evidence ta
 
 # ============================================================================= cite
 A("## 📝 How to cite\n")
-A("If this list helps your work, please cite the survey it accompanies.\n")
-A("```bibtex\n@unpublished{rafe2026decisioncontracts,\n  author = {Rafe, Amir and Das, Subasish},\n"
-  f"  title  = {{{meta['survey']['title']}}},\n  year   = {{{meta['survey']['year']}}},\n  note   = {{{STATUS[0].upper() + STATUS[1:]}}}\n}}\n```\n")
+A(f"If this list helps your work, please cite the survey it accompanies ([project page]({meta['survey']['url']})).\n")
+A("```bibtex\n@misc{rafe2026systemone,\n"
+  f"  title  = {{{meta['survey']['title']}}},\n  author = {{Rafe, Amir and Das, Subasish}},\n"
+  f"  year   = {{{meta['survey']['year']}}},\n  note   = {{Preprint, {STATUS}}},\n  url    = {{{meta['survey']['url']}}}\n}}\n```\n")
 A("To cite the list itself, use [CITATION.cff](CITATION.cff) or:\n")
 A("```bibtex\n@misc{rafe2026awesomesystemone,\n  author       = {Rafe, Amir and Das, Subasish},\n"
   "  title        = {{Awesome System One Models: A Curated, Evidence-Graded List of Typed Probabilistic Decision Models}},\n"

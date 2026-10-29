@@ -21,7 +21,7 @@
 
 <div align="center">
 
-Maintained alongside &nbsp;<strong>System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence</strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript under review</em>, with the companion benchmark <a href="https://arxiv.org/abs/2610.00346">arXiv:2610.00346</a> &nbsp; <img src="https://img.shields.io/badge/survey-under%20review-1d4776.svg?style=flat-square" alt="survey under review"/>
+Maintained alongside &nbsp;<strong><a href="https://pozapas.github.io/system-one-models-survey/">System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence</a></strong> &nbsp;·&nbsp; Rafe and Das, <em>manuscript under review</em>, with the companion benchmark <a href="https://arxiv.org/abs/2610.00346">arXiv:2610.00346</a> &nbsp; <img src="https://img.shields.io/badge/survey-under%20review-1d4776.svg?style=flat-square" alt="survey under review"/>
 
 </div>
 
@@ -1874,14 +1874,15 @@ Additions follow the survey's inclusion rules. A study enters the evidence table
 
 ## 📝 How to cite
 
-If this list helps your work, please cite the survey it accompanies.
+If this list helps your work, please cite the survey it accompanies ([project page](https://pozapas.github.io/system-one-models-survey/)).
 
 ```bibtex
-@unpublished{rafe2026decisioncontracts,
-  author = {Rafe, Amir and Das, Subasish},
+@misc{rafe2026systemone,
   title  = {System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence},
+  author = {Rafe, Amir and Das, Subasish},
   year   = {2026},
-  note   = {Manuscript under review}
+  note   = {Preprint, manuscript under review},
+  url    = {https://pozapas.github.io/system-one-models-survey/}
 }
 ```
 
