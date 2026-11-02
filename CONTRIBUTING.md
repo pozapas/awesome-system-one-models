@@ -48,7 +48,7 @@ git checkout -b add-<short-name>
 # 2. Add or edit rows in the relevant file under data/
 #    papers.csv        papers in the genealogy streams and related resources
 #    studies.csv       studies in the evidence table
-#    census_t1.csv     open original implementations (one row per checkpoint)
+#    census_t1_contributed.csv  open original implementations added after the cutoff (one row per checkpoint)
 #    families.csv      the condensed family table
 #    datasets.csv      typed-decision datasets with a full card
 #    tooling.csv       harnesses, servers, SDKs and evaluation packages
@@ -66,7 +66,7 @@ git commit -am "Add <resource name>"
 | --- | --- | --- |
 | `papers.csv` | `group`, `year`, `title`, `first_author`, `venue`, `link` | `group` is one of `S1` to `S5`, `ADJ`, `RPT`, `STATS` or `DATA`. `link` is a DOI URL, an arXiv abstract URL or a stable publisher URL. |
 | `studies.csv` | `title`, `link`, `date`, `task_family`, `decision_models`, `reference_labels` | Leave `rob_overall` empty. The maintainers grade every study on the five risk-of-bias domains before it is listed. |
-| `census_t1.csv` | `id`, `created`, `license`, `base_model` | `id` is the Hugging Face repository ID. Fill `head` (`a` to `e`) only when the card describes the decision head. |
+| `census_t1_contributed.csv` | `id`, `created`, `license`, `base_model` | `id` is the Hugging Face repository ID. Fill `head` (`a` to `e`) only when the card describes the decision head. `census_t1.csv` is regenerated from the survey's census, so add new checkpoints here. |
 | `datasets.csv` | `id`, `author`, `license`, `purpose` | `purpose` is a sentence taken from the card. |
 | `tooling.csv` | `name`, `repo`, `category`, `license`, `description` | `category` is one of `vendor_sdk`, `local_server`, `integration`, `evaluation` or `open_model_training`. |
 

@@ -7,3 +7,4 @@ limberc/this-that-spatial-bench,limberc,mit,"The benchmark named on the this-tha
 n4ze3m/typed-decisions-synth,n4ze3m,mit,Synthetic dataset built for Hmm (a small open model answering questions about data with probabilities instead of text)
 pngwn/typed-decisions,pngwn,cc-by-sa-4.0,"Typed-decision corpus for training a masked-diffusion LM (the LLaDA recipe, nanodiff-350m-base) to emit calibrated discrete decisions instead of text"
 tasksource/tasksource-jev-typed-decisions,tasksource,other,"One million decisions from 500+ Tasksource tasks across 300+ dataset families, in a single typed-decision format"
+RPorcedda/Sys1Cal-v1,RPorcedda,mit,Synthetic benchmark for probability calibration in Jev-like typed decision models; each item is a True/False question about a proposition whose exact probability is known by construction

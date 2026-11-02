@@ -12,7 +12,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/pozapas/awesome-system-one-models.svg?style=social&label=Star)](https://github.com/pozapas/awesome-system-one-models)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-blue.svg?style=flat-square)](https://github.com/pozapas/awesome-system-one-models/commits/main)
-[![Resources](https://img.shields.io/badge/Resources-1250-orange.svg?style=flat-square)](#-at-a-glance)
+[![Resources](https://img.shields.io/badge/Resources-1253-orange.svg?style=flat-square)](#-at-a-glance)
 [![Version](https://img.shields.io/badge/version-v1.2%20%C2%B7%20cutoff%202026--10--28-6c3483.svg?style=flat-square)](#-cutoff-and-versioning)
 
 </div>
@@ -31,7 +31,7 @@ Maintained alongside &nbsp;<strong><a href="https://pozapas.github.io/system-one
 
 ### 🎯 *"A decision model is a new contract, not a new kind of intelligence."*
 
-**214 registry-verified papers · 248 graded studies · 388 models · 246 datasets · 127 tools**  
+**214 registry-verified papers · 248 graded studies · 389 models · 247 datasets · 128 tools**  
 *Organized by the survey's own structure: genealogy, anatomy, census, evidence, failures, patterns and reporting*
 
 [🧩 Concept](#-what-is-a-system-one-model) • [🌳 Genealogy](#-genealogy) • [🤖 Models](#-models) • [🔬 Evidence](#-evidence) • [🧨 Failure atlas](#-failure-atlas) • [🧱 Patterns](#-design-patterns) • [🤝 Contribute](CONTRIBUTING.md) • [📝 Cite](#-how-to-cite)
@@ -99,10 +99,10 @@ graph TD
 
 - **📄 Registry-verified papers**: 214, of which 166 sit in the five genealogy streams S1 36, S2 26, S3 51, S4 40, S5 13
 - **☁️ Hosted and provider-released decision models**: 6 (Jev 1.13, TypeSafe AI; Jev 1.14, TypeSafe; Microsoft-Decision-1, Microsoft; Trio-Spark, MachineFi; Clef and Clef-Flash, Cloudflare; pplx-decider v1.1 (27B), Perplexity)
-- **🔓 Open original implementations on Hugging Face (T1)**: 379 checkpoints, 101 in 67 recipe families at the first cutoff and 278 in 149 families added by v1.2; first releases 2026-09-16 to 2026-10-28; the first census found 15 backbone families
+- **🔓 Open original implementations on Hugging Face (T1)**: 380 checkpoints, 101 in 67 recipe families at the first cutoff and 278 in 149 families added by v1.2; first releases 2026-09-16 to 2026-10-28; the first census found 15 backbone families; 1 more was added from contributions after the cutoff
 - **🧩 Decision heads (T1)**: fixed slots 30, option markers 135, label logits 171, pair scoring 36, constrained decoding 0, undisclosed 7
 - **🧬 Derivatives (T2)**: 1,370 (format conversions 591, quantizations 110, language fine-tunes 32, domain fine-tunes 345, merges 28, other 264)
-- **📚 Datasets**: 246 typed-decision datasets on Hugging Face, 8 with a full card
+- **📚 Datasets**: 246 typed-decision datasets on Hugging Face, 9 with a full card
 - **🐙 GitHub repositories screened**: 16,014 (approximate split from rules and a classifier: applications 6,492, integrations 5,228, evaluation 2,034, local servers 1,094, open-model training 875, directories 290, mirrors 1); 226 at the first cutoff
 - **🔬 Evidence ledger**: 3,511 extracted values from 248 studies; risk of bias low 3, some concerns 103, high 142
 - **🧨 Failure modes**: 15 · **🧱 Design patterns**: 13 · **✅ Checklist items**: 16 in 5 groups
@@ -491,9 +491,9 @@ Open label-conditioned heads on public backbones reproduced the typed contract w
 </details>
 
 <details>
-<summary>🧾 <strong>Full census of open original implementations</strong> (379 Hugging Face checkpoints, tier T1)</summary>
+<summary>🧾 <strong>Full census of open original implementations</strong> (380 Hugging Face checkpoints, tier T1)</summary>
 
-Each checkpoint is coded by decision head from its own card or code; 7 cards do not say how the distribution is read and are marked undisclosed. The first census (101 checkpoints) runs to 24 September 2026, and version 1.2 adds 278 more up to 28 October 2026.
+Each checkpoint is coded by decision head from its own card or code; 7 cards do not say how the distribution is read and are marked undisclosed. The first census (101 checkpoints) runs to 24 September 2026, and version 1.2 adds 278 more up to 28 October 2026; 1 more was added from contributions after the cutoff.
 
 | Checkpoint | Created | Base model | Params | License | Head |
 | --- | --- | --- | --- | --- | --- |
@@ -670,6 +670,7 @@ Each checkpoint is coded by decision head from its own card or code; 7 cards do 
 | [Mapika/decider-chat-gemma4-31b](https://huggingface.co/Mapika/decider-chat-gemma4-31b) | 2026-09-29 | google/gemma-4-31B-it | n/a | apache-2.0 | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [Mapika/decider-chat-qwen3.6-27b](https://huggingface.co/Mapika/decider-chat-qwen3.6-27b) | 2026-09-29 | Qwen/Qwen3.6-27B | n/a | apache-2.0 | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [mohdyaser/jev-multimodal](https://huggingface.co/mohdyaser/jev-multimodal) | 2026-09-29 | mlx-community/gemma-4-e4b-it-4bit | n/a | not stated | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
+| [samratduttaofficial/WaterSheep](https://huggingface.co/samratduttaofficial/WaterSheep) | 2026-09-29 | answerdotai/ModernBERT-base | n/a | apache-2.0 | · |
 | [startlux-models/StartLux-Decision-v1-0.8B](https://huggingface.co/startlux-models/StartLux-Decision-v1-0.8B) | 2026-09-29 | not stated | n/a | cc-by-nc-4.0 | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [startlux-models/StartLux-Decision-v1-27B](https://huggingface.co/startlux-models/StartLux-Decision-v1-27B) | 2026-09-29 | not stated | n/a | cc-by-nc-4.0 | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
 | [startlux-models/StartLux-Decision-v1-2B](https://huggingface.co/startlux-models/StartLux-Decision-v1-2B) | 2026-09-29 | not stated | n/a | cc-by-nc-4.0 | <img src="https://img.shields.io/badge/head-Label%20logits-17a589.svg?style=flat-square" alt="Label logits"/> |
@@ -922,6 +923,7 @@ Typed-decision datasets appeared alongside the models. Label construction differ
 | [n4ze3m/typed-decisions-synth](https://huggingface.co/datasets/n4ze3m/typed-decisions-synth) | n4ze3m | mit | Synthetic dataset built for Hmm (a small open model answering questions about data with probabilities instead of text) |
 | [pngwn/typed-decisions](https://huggingface.co/datasets/pngwn/typed-decisions) | pngwn | cc-by-sa-4.0 | Typed-decision corpus for training a masked-diffusion LM (the LLaDA recipe, nanodiff-350m-base) to emit calibrated discrete decisions instead of text |
 | [tasksource/tasksource-jev-typed-decisions](https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions) | tasksource | other | One million decisions from 500+ Tasksource tasks across 300+ dataset families, in a single typed-decision format |
+| [RPorcedda/Sys1Cal-v1](https://huggingface.co/datasets/RPorcedda/Sys1Cal-v1) | RPorcedda | mit | Synthetic benchmark for probability calibration in Jev-like typed decision models; each item is a True/False question about a proposition whose exact probability is known by construction |
 
 <details>
 <summary>🗃️ <strong>All typed-decision datasets in the census</strong> (246)</summary>
@@ -1193,7 +1195,7 @@ The vendor also publishes [workflow evals](https://evals.typesafe.ai/), graded i
 
 ## 🛠️ Harnesses and tooling
 
-Each entry has a census card with a pinned commit. Stars are as recorded on the census date. Plug-ins for coding assistants are counted in the census but not listed individually. The entries below come from the first census; the version 1.2 sweep screened 15788 further repositories, which are counted in the statistics but not listed.
+Each entry has a census card with a pinned commit. Stars are as recorded on the census date. Plug-ins for coding assistants are counted in the census but not listed individually. The entries below come from the first census and from contributions; the version 1.2 sweep screened 15788 further repositories, which are counted in the statistics but not listed.
 
 <details open>
 <summary>📦 Vendor SDKs <strong>(3)</strong></summary>
@@ -1207,7 +1209,7 @@ Each entry has a census card with a pinned commit. Stars are as recorded on the 
 </details>
 
 <details>
-<summary>🖥️ Local servers and runtimes <strong>(48)</strong></summary>
+<summary>🖥️ Local servers and runtimes <strong>(49)</strong></summary>
 
 | Repository | ⭐ | License | Created | What it does |
 | --- | ---: | --- | --- | --- |
@@ -1231,6 +1233,7 @@ Each entry has a census card with a pinned commit. Stars are as recorded on the 
 | [laya-mps](https://github.com/afshinm/laya-mps) | 19 | MIT | 2026-09-21 | Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses |
 | [snap](https://github.com/emnlmn/snap) | 19 | unknown | 2026-09-23 | Typed decisions from unstructured state: one forward pass, zero generated text. Local, deterministic, Jev-compatible. Not affiliated with typesafe.ai. |
 | [JEV-CPU](https://github.com/leesk212/JEV-CPU) | 18 | MIT | 2026-09-19 | Run SemIf (Jev-style semantic-if decisions) on a CPU, no GPU. Reads typed option probabilities straight from an open model in one forward pass, plus a web UI. |
+| [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) | 14 | Apache-2.0 | 2026-09-29 | A decision model that returns calibrated answers to yes/no, choice, score and multi-label questions. |
 | [snapjudge](https://github.com/Micha0827/snapjudge) | 12 | MIT | 2026-09-18 | Typed decisions (choice / score / yes-no) from local Qwen models on Apple Silicon. Probabilities come straight from the logits, no text generation. TypeSafe-compatible HTTP API, … |
 | [jev_nx](https://github.com/dannote/jev_nx) | 8 | Apache-2.0 | 2026-09-21 | Open decision models as a Jev backend, running in-process on Nx |
 | [laya-rs](https://github.com/apiplant/laya-rs) | 8 | Apache-2.0 | 2026-09-19 | Rust reimplementation of Laya, a sub-35ms non-autoregressive typed-decision engine (ModernBERT encoder + RLCD-trained decision head), built from scratch on candle. |

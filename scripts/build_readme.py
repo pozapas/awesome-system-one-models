@@ -116,7 +116,8 @@ meta = load("meta.json")
 papers = rows("papers.csv")
 studies = rows("studies.csv")
 fams = rows("families.csv")
-t1 = rows("census_t1.csv")
+# census_t1.csv is regenerated from the survey's census; checkpoints contributed after the cutoff live in their own file
+t1 = sorted(rows("census_t1.csv") + rows("census_t1_contributed.csv"), key=lambda t: (t["created"], t["id"].lower()))
 dsets = rows("datasets.csv")
 dcensus = rows("census_datasets.csv")
 tools = rows("tooling.csv")
@@ -164,6 +165,9 @@ for k in "abcde":
     head_n.setdefault(k, 0)
 if head_n["undisclosed"] != int(counts["heads.undisclosed"]) or sum(head_n[k] for k in "abcde") != int(counts["heads.coded"]) - int(counts["heads.undisclosed"]):
     sys.exit("The decision-head codes in census_t1.csv differ from the counts in census_counts.csv")
+n_t1_added = len(t1) - int(counts["total.t1Count"])
+t1_added_note = (f"; {n_t1_added} more {'was' if n_t1_added == 1 else 'were'} added from contributions after the cutoff"
+                 if n_t1_added else "")
 github_only = [f for f in fams if not f["hf"]]
 n_papers = len(papers)
 n_models = hosted_n + len(t1) + len(github_only)
@@ -299,7 +303,7 @@ stat_lines = [
     f"- **☁️ Hosted and provider-released decision models**: {hosted_n} (Jev 1.13, TypeSafe AI" + "".join(f"; {h['name']}, {h['provider']}" for h in hosted_later) + ")",
     f"- **🔓 Open original implementations on Hugging Face (T1)**: {len(t1)} checkpoints, {counts['hf.t1Count']} in {counts['hf.t1Families']} recipe families "
     f"at the first cutoff and {counts['hf12.t1Count']} in {counts['hf12.t1Families']} families added by v{meta['version']}; first releases {counts['total.t1.releaseDateSpan']}; "
-    f"the first census found {counts['hf.t1.distinctBackboneFamilies']} backbone families",
+    f"the first census found {counts['hf.t1.distinctBackboneFamilies']} backbone families" + t1_added_note,
     "- **🧩 Decision heads (T1)**: " + ", ".join(f"{HEADS[k]['name'].lower()} {head_n[k]}" for k in "abcde") + f", undisclosed {head_n['undisclosed']}",
     f"- **🧬 Derivatives (T2)**: {thousands(counts['total.t2Count'])} (format conversions {thousands(counts['total.t2.formatConversion'])}, quantizations {thousands(counts['total.t2.quantization'])}, "
     f"language fine-tunes {thousands(counts['total.t2.finetuneLanguage'])}, domain fine-tunes {thousands(counts['total.t2.finetuneDomain'])}, merges {thousands(counts['total.t2.merge'])}, other {thousands(counts['total.t2.other'])})",
@@ -415,7 +419,7 @@ t1_rows = [[f"[{esc(t['id'])}]({hf(t['id'])})", t["created"], esc(t["base_model"
 A(details(f"🧾 <strong>Full census of open original implementations</strong> ({len(t1)} Hugging Face checkpoints, tier T1)",
           f"Each checkpoint is coded by decision head from its own card or code; {head_n['undisclosed']} cards do not say how the "
           f"distribution is read and are marked undisclosed. The first census ({counts['hf.t1Count']} checkpoints) runs to {FIRST_CUTOFF}, "
-          f"and version {meta['version']} adds {counts['hf12.t1Count']} more up to {CUTOFF}.\n\n" +
+          f"and version {meta['version']} adds {counts['hf12.t1Count']} more up to {CUTOFF}{t1_added_note}.\n\n" +
           md_table(["Checkpoint", "Created", "Base model", "Params", "License", "Head"], t1_rows)) + "\n")
 A(details(f"🧬 <strong>Derivatives</strong> ({counts['total.t2Count']} tier-T2 repositories)",
           md_table(["Kind", "Count"], [["Format conversions (GGUF, ONNX, MLX and similar)", counts["total.t2.formatConversion"]],
@@ -447,9 +451,9 @@ A("The vendor also publishes [workflow evals](https://evals.typesafe.ai/), grade
 # ============================================================================= tooling
 A("## 🛠️ Harnesses and tooling\n")
 A("Each entry has a census card with a pinned commit. Stars are as recorded on the census date. Plug-ins for coding "
-  "assistants are counted in the census but not listed individually. The entries below come from the first census; the "
-  f"version {meta['version']} sweep screened {counts['gh12.countTotal']} further repositories, which are counted in the statistics "
-  "but not listed.\n")
+  "assistants are counted in the census but not listed individually. The entries below come from the first census and "
+  f"from contributions; the version {meta['version']} sweep screened {counts['gh12.countTotal']} further repositories, which are "
+  "counted in the statistics but not listed.\n")
 CATS = OrderedDict([("vendor_sdk", "📦 Vendor SDKs"), ("vendor_cookbook", "📒 Vendor cookbooks"),
                     ("local_server", "🖥️ Local servers and runtimes"), ("integration", "🔌 Integrations"),
                     ("evaluation", "📏 Evaluation packages and benchmarks"),
@@ -615,7 +619,7 @@ A(f"This is **v{meta['version']}**. It reflects the survey's literature and ecos
   "list is updated after it. Later additions are released as minor versions with their own cutoff date. Values are never "
   "edited in place; a correction adds a row that supersedes the old one, and model entries record the revision they describe.\n")
 A(f"**v{meta['version']}** (cutoff {CUTOFF}) adds the version {meta['version']} census, which brings the open original implementations to "
-  f"{len(t1)} and codes each by decision head, and it extends the evidence table to {len(studies)} graded studies. It rebuilds the failure atlas "
+  f"{counts['total.t1Count']} and codes each by decision head, and it extends the evidence table to {len(studies)} graded studies. It rebuilds the failure atlas "
   f"with {len(asrc)} sourced marks and lists " + "; ".join(h["name"] for h in hosted_later[:-1]) + f"; and {hosted_later[-1]['name']} among the "
   f"models released after the first cutoff. **v1.0** (cutoff {FIRST_CUTOFF}) is the survey's first cutoff, with {counts['hf.t1Count']} original "
   "implementations in its census.\n")
